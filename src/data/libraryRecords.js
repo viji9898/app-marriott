@@ -174,6 +174,50 @@ export const LIBRARY_RECORDS = [
       "The source contains informal language, placeholders and conflicting dates. Edited extracts are required before public release.",
   },
   {
+    id: "MW-DES-001",
+    slug: "marriott-issued-area-program-150-key-weligama",
+    title: "Marriott-Issued Area Program — 150-Key Weligama Hotel",
+    shortTitle: "Marriott Area Program",
+    description:
+      "The detailed spatial and numerical planning schedule defining area requirements, room counts and functional allocations for the proposed 150-key Weligama hotel.",
+    phase: "Design",
+    type: "Area Program",
+    format: "PDF",
+    date: "29 July 2011",
+    pages: null,
+    evidenceStatus: "Contemporaneous record",
+    access: "Public",
+    featured: false,
+    fileUrl:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-marriott-case-study/marriott-area-program/CY+Weligama+-+Area+Program+-150+keys_29Jul11.pdf",
+    thumbnail: null,
+    relatedRoutes: ["/development", "/design"],
+    notes:
+      "Also known as a facilities schedule, the area program provided the precise spatial brief used during planning. This issue records the earlier 150-key scheme before the project was revised to 198 keys.",
+  },
+  {
+    id: "MW-DES-002",
+    slug: "marriott-updated-area-program-200-key-resort-and-spa",
+    title: "Marriott Updated Area Program — 200-Key Resort & Spa",
+    shortTitle: "Updated Marriott Area Program",
+    description:
+      "The updated Marriott facilities summary defining area requirements and functional allocations for a proposed 200-key Marriott Resort & Spa at Weligama.",
+    phase: "Design",
+    type: "Area Program",
+    format: "PDF",
+    date: "2 April 2012",
+    pages: null,
+    evidenceStatus: "Contemporaneous record",
+    access: "Public",
+    featured: false,
+    fileUrl:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-marriott-case-study/marriott-area-program/Update+-+MHR+Weligama+Facilities+Summary+200+keys_02April12.pdf",
+    thumbnail: null,
+    relatedRoutes: ["/development", "/design"],
+    notes:
+      "This updated facilities summary records the 200-key planning iteration that followed the 150-key area program and preceded the final 198-key resort programme.",
+  },
+  {
     id: "MW-APP-001",
     slug: "sltda-one-stop-unit-presentation-21-july-2011",
     title: "SLTDA One Stop Unit Presentation",
