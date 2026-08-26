@@ -5779,7 +5779,7 @@ footer {
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
   font: 500 21px/1.15 "Cormorant Garamond", serif;
 }
-.exit-timing-grid .exit-timing-note {
+.exit-timing-grid > div:last-child > p.exit-timing-note {
   margin-top: 30px;
   padding-left: 17px;
   color: rgba(255, 255, 255, 0.58);

@@ -231,7 +231,7 @@ function ExitPage() {
             The available source record does not include the detailed equity cash-flow,
             debt-settlement, fee or tax schedules required to reconcile the reported
             120% ROI. A simple USD 15 million profit divided by USD 15 million invested
-            produces 100%. The 120% figure is therefore presented as reported, pending
+            produces 100%. The reported 120% ROI is therefore presented pending
             supporting documentation.
           </p>
         </aside>
