@@ -41,6 +41,7 @@ import DesignPage from "./pages/DesignPage";
 import ConstructionPage from "./pages/ConstructionPage";
 import OperationsPage from "./pages/OperationsPage";
 import ExitPage from "./pages/ExitPage";
+import LessonsPage from "./pages/LessonsPage";
 import "./App.css";
 
 const stages = [
@@ -490,6 +491,7 @@ function App() {
         <Route path="/construction" element={<ConstructionPage />} />
         <Route path="/operations" element={<OperationsPage />} />
         <Route path="/exit" element={<ExitPage />} />
+        <Route path="/lessons" element={<LessonsPage />} />
         {Object.entries(pageData).map(([path, [section, title, intro]]) => (
           <Route
             key={path}

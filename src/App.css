@@ -6064,3 +6064,898 @@ footer {
     font-size: 16px;
   }
 }
+
+/* Lessons */
+.lessons-page {
+  color: var(--body);
+  background: var(--paper);
+}
+.lessons-hero {
+  min-height: 82vh;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  color: #fff;
+  background: var(--ink);
+}
+.lessons-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 24, 32, 0.72);
+}
+.lessons-hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 46%;
+  filter: grayscale(0.72) contrast(1.05);
+}
+.lessons-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 145px 0 132px;
+}
+.lessons-hero h1 {
+  max-width: 940px;
+  margin: 0;
+  font: 500 clamp(62px, 7.4vw, 112px) / 0.88 "Cormorant Garamond", serif;
+  letter-spacing: -0.03em;
+}
+.lessons-hero-copy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  max-width: 930px;
+  margin-top: 42px;
+}
+.lessons-hero-copy p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
+  line-height: 1.75;
+}
+.lessons-hero-line {
+  position: absolute;
+  z-index: 2;
+  inset: auto 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+}
+.lessons-hero-line .page-width {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.lessons-hero-line span {
+  padding: 18px 16px 18px 0;
+  color: rgba(255, 255, 255, 0.67);
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.lessons-hero-line span + span {
+  padding-left: 16px;
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+}
+.lessons-section-heading h2,
+.lessons-close h2 {
+  max-width: 900px;
+  margin: 0;
+  color: var(--ink);
+  font: 500 clamp(46px, 5.2vw, 76px) / 0.93 "Cormorant Garamond", serif;
+  letter-spacing: -0.025em;
+}
+.lessons-principal,
+.lessons-operator,
+.lessons-infrastructure,
+.lessons-contract,
+.lessons-mockups,
+.lessons-value,
+.lessons-leadership,
+.lessons-rate,
+.lessons-change {
+  padding-block: 125px;
+}
+.lessons-sequence,
+.lessons-area,
+.lessons-flow,
+.lessons-information,
+.lessons-adaptability,
+.lessons-time,
+.lessons-commissioning,
+.lessons-exit-readiness {
+  padding: 115px 0;
+}
+.lessons-sequence,
+.lessons-flow,
+.lessons-time,
+.lessons-exit-readiness {
+  color: #fff;
+  background: var(--slate);
+}
+.lessons-sequence .lessons-section-heading h2,
+.lessons-flow .lessons-section-heading h2,
+.lessons-time .lessons-section-heading h2,
+.lessons-exit-readiness .lessons-section-heading h2 {
+  color: #fff;
+}
+.lessons-dark-intro,
+.lessons-dark-note {
+  max-width: 720px;
+  margin: 40px 0 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  line-height: 1.78;
+}
+.lessons-dark-note {
+  margin-left: auto;
+  padding-left: 18px;
+  border-left: 2px solid var(--copper);
+  font-size: 10px;
+}
+.lessons-intro {
+  max-width: 720px;
+  margin: 40px 0 0;
+  color: #555f62;
+  font-size: 14px;
+  line-height: 1.82;
+}
+.lessons-principal-grid,
+.lessons-operator-grid,
+.lessons-mockup-grid,
+.lessons-value-grid,
+.lessons-leadership-grid,
+.lessons-rate-grid {
+  display: grid;
+  grid-template-columns: 0.78fr 1.22fr;
+  gap: 10%;
+  margin-top: 58px;
+}
+.lessons-principal-grid > div:first-child > p,
+.lessons-operator-grid > div:first-child > p,
+.lessons-mockup-grid > div:first-child > p,
+.lessons-value-grid > div:first-child > p,
+.lessons-leadership-grid > div:first-child > p,
+.lessons-rate-grid > div:first-child > p {
+  margin: 0 0 22px;
+  color: #555f62;
+  font-size: 14px;
+  line-height: 1.82;
+}
+.lessons-delay {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-top: 45px;
+  padding-block: 20px;
+  border-block: 1px solid var(--ink);
+}
+.lessons-delay strong {
+  color: var(--ink);
+  font: 500 40px/1 "Cormorant Garamond", serif;
+}
+.lessons-delay span {
+  color: #77766f;
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.lessons-numbered-list,
+.lessons-compact-list,
+.lessons-control-list,
+.lessons-adaptability-list,
+.lessons-exit-list,
+.lessons-value-tests {
+  border-top: 1px solid var(--ink);
+}
+.lessons-numbered-list > div,
+.lessons-compact-list > div,
+.lessons-control-list > div,
+.lessons-adaptability-list > div,
+.lessons-exit-list > div,
+.lessons-value-tests > div {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 14px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+}
+.lessons-numbered-list span,
+.lessons-compact-list span,
+.lessons-control-list span,
+.lessons-adaptability-list span,
+.lessons-exit-list span,
+.lessons-value-tests span {
+  color: var(--copper);
+  font-size: 9px;
+}
+.lessons-numbered-list p,
+.lessons-compact-list p,
+.lessons-control-list p,
+.lessons-adaptability-list p,
+.lessons-exit-list p,
+.lessons-value-tests p {
+  margin: -3px 0 0;
+  color: #596164;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.lessons-principle-note {
+  max-width: 760px;
+  margin: 50px 0 0 auto;
+  padding-left: 18px;
+  color: #596164;
+  border-left: 2px solid var(--copper);
+  font-size: 11px;
+  line-height: 1.72;
+}
+.lessons-comparison-table,
+.lessons-evidence-table {
+  margin-top: 58px;
+  border-top: 1px solid rgba(255, 255, 255, 0.42);
+}
+.lessons-table-head,
+.lessons-comparison-table > div:not(.lessons-table-head),
+.lessons-evidence-table > div:not(.lessons-table-head) {
+  display: grid;
+  grid-template-columns: 0.8fr 1.1fr 1.1fr;
+  gap: 24px;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+}
+.lessons-table-head {
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.lessons-comparison-table strong,
+.lessons-evidence-table strong {
+  color: #fff;
+  font: 500 20px/1.15 "Cormorant Garamond", serif;
+}
+.lessons-comparison-table p,
+.lessons-evidence-table p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 10px;
+  line-height: 1.58;
+}
+.lessons-operator-grid {
+  grid-template-columns: 0.68fr 1.32fr;
+}
+.lessons-compact-list {
+  margin-top: 40px;
+}
+.lessons-preferred-sequence > p,
+.lessons-future-label {
+  margin: 0 0 18px;
+  color: #77766f;
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.lessons-preferred-sequence {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.lessons-preferred-sequence > p {
+  grid-column: 1 / -1;
+}
+.lessons-preferred-sequence article {
+  min-height: 125px;
+  padding: 14px 18px 18px 0;
+  border-top: 1px solid var(--ink);
+}
+.lessons-preferred-sequence article:nth-of-type(even) {
+  padding-left: 18px;
+  border-left: 1px solid var(--line);
+}
+.lessons-preferred-sequence article > span {
+  color: var(--copper);
+  font-size: 8px;
+}
+.lessons-preferred-sequence h3 {
+  margin: 25px 0 7px;
+  color: var(--ink);
+  font: 500 23px/1 "Cormorant Garamond", serif;
+}
+.lessons-preferred-sequence article p {
+  margin: 0;
+  color: #596164;
+  font-size: 9px;
+  line-height: 1.5;
+}
+.lessons-area,
+.lessons-information,
+.lessons-adaptability,
+.lessons-commissioning {
+  background: var(--ivory);
+}
+.lessons-area-grid,
+.lessons-information-grid,
+.lessons-adaptability-grid,
+.lessons-exit-grid,
+.lessons-close-grid {
+  display: grid;
+  grid-template-columns: 0.86fr 1.14fr;
+  gap: 10%;
+}
+.lessons-area-grid > div:first-child > p,
+.lessons-information-grid > div:first-child > p,
+.lessons-adaptability-grid > div:first-child > p,
+.lessons-exit-grid > div:first-child > p {
+  margin: 40px 0 0;
+  color: #555f62;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.lessons-area-system {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--ink);
+}
+.lessons-area-system > span {
+  min-height: 74px;
+  padding: 13px 12px 12px 0;
+  color: #596164;
+  border-bottom: 1px solid var(--line);
+  font-size: 10px;
+  line-height: 1.4;
+}
+.lessons-area-system > span:not(:nth-child(3n + 1)) {
+  padding-left: 12px;
+  border-left: 1px solid var(--line);
+}
+.lessons-area-system .lessons-area-core {
+  color: var(--ink);
+  font: 500 21px/1.1 "Cormorant Garamond", serif;
+}
+.lessons-infrastructure-intro {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 9%;
+  align-items: end;
+  margin-top: 50px;
+}
+.lessons-infrastructure-intro > p {
+  margin: 0;
+  color: #555f62;
+  font-size: 14px;
+  line-height: 1.82;
+}
+.lessons-infrastructure-intro > strong {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-block: 20px;
+  color: var(--ink);
+  border-block: 1px solid var(--ink);
+  font: 500 38px/1 "Cormorant Garamond", serif;
+}
+.lessons-infrastructure-intro small {
+  color: #77766f;
+  font: 500 8px/1 sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.lessons-evidence-table {
+  border-top-color: var(--ink);
+}
+.lessons-evidence-table .lessons-table-head,
+.lessons-evidence-table > div:not(.lessons-table-head) {
+  grid-template-columns: 0.9fr 1.1fr;
+  border-bottom-color: var(--line);
+}
+.lessons-evidence-table .lessons-table-head {
+  color: #77766f;
+}
+.lessons-evidence-table strong {
+  color: var(--ink);
+}
+.lessons-evidence-table p {
+  color: #596164;
+}
+.lessons-flow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 62px;
+  border-top: 1px solid rgba(255, 255, 255, 0.42);
+}
+.lessons-flow-grid article {
+  padding: 20px 24px 10px 0;
+}
+.lessons-flow-grid article + article {
+  padding-left: 24px;
+  border-left: 1px solid rgba(255, 255, 255, 0.17);
+}
+.lessons-flow-grid article > span {
+  color: var(--copper);
+  font-size: 9px;
+}
+.lessons-flow-grid h3 {
+  margin: 34px 0 22px;
+  color: #fff;
+  font: 500 36px/1 "Cormorant Garamond", serif;
+}
+.lessons-flow-grid p {
+  margin: 0;
+  padding: 10px 0;
+  color: rgba(255, 255, 255, 0.58);
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: 10px;
+}
+.lessons-light-table {
+  border-top-color: var(--ink);
+}
+.lessons-light-table .lessons-table-head,
+.lessons-light-table > div:not(.lessons-table-head) {
+  border-bottom-color: var(--line);
+}
+.lessons-light-table .lessons-table-head {
+  color: #77766f;
+}
+.lessons-light-table strong {
+  color: var(--ink);
+}
+.lessons-light-table p {
+  color: #596164;
+}
+.lessons-information-note {
+  padding-left: 17px;
+  border-left: 2px solid var(--copper);
+  font-size: 10px;
+}
+.lessons-control-list {
+  border-top-color: var(--ink);
+}
+.lessons-mockup-grid > div:first-child {
+  padding-right: 5%;
+}
+.lessons-standard-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+  border-top: 1px solid var(--ink);
+}
+.lessons-standard-list span {
+  min-height: 54px;
+  padding: 12px 10px 10px 0;
+  color: #596164;
+  border-bottom: 1px solid var(--line);
+  font-size: 10px;
+}
+.lessons-standard-list span:nth-child(even) {
+  padding-left: 10px;
+  border-left: 1px solid var(--line);
+}
+.lessons-future-mockup {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  padding: 15px 0;
+  border-top: 1px solid var(--ink);
+}
+.lessons-future-mockup span {
+  color: var(--copper);
+  font-size: 9px;
+}
+.lessons-future-mockup strong {
+  color: var(--ink);
+  font: 500 23px/1 "Cormorant Garamond", serif;
+}
+.lessons-mockup-note {
+  margin: 28px 0 0;
+  color: #596164;
+  font-size: 10px;
+  line-height: 1.6;
+}
+.lessons-adaptability-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.lessons-adaptability-list > div:nth-child(even) {
+  padding-left: 14px;
+  border-left: 1px solid var(--line);
+}
+.lessons-example {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 42px;
+  padding-block: 20px;
+  color: var(--ink);
+  border-block: 1px solid var(--ink);
+  font: 500 20px/1.35 "Cormorant Garamond", serif;
+}
+.lessons-example span {
+  color: var(--copper);
+  font: 500 8px/1 sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.lessons-cost-equation {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 62px;
+  border-top: 1px solid rgba(255, 255, 255, 0.42);
+}
+.lessons-cost-equation > div {
+  position: relative;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 17px 20px 18px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+}
+.lessons-cost-equation > div:not(:nth-child(4n + 1)) {
+  padding-left: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.17);
+}
+.lessons-cost-equation span {
+  color: var(--copper);
+  font-size: 8px;
+}
+.lessons-cost-equation strong {
+  max-width: 180px;
+  color: rgba(255, 255, 255, 0.76);
+  font: 500 20px/1.1 "Cormorant Garamond", serif;
+}
+.lessons-cost-equation b {
+  position: absolute;
+  right: -5px;
+  bottom: 42%;
+  z-index: 1;
+  color: var(--copper);
+  font-weight: 400;
+}
+.lessons-checklist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 60px;
+  border-top: 1px solid var(--ink);
+}
+.lessons-checklist span {
+  min-height: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 13px 15px 12px 0;
+  color: #596164;
+  border-bottom: 1px solid var(--line);
+  font-size: 10px;
+}
+.lessons-checklist span:not(:nth-child(3n + 1)) {
+  padding-left: 15px;
+  border-left: 1px solid var(--line);
+}
+.lessons-checklist b {
+  color: var(--copper);
+  font-size: 8px;
+  font-weight: 500;
+}
+.lessons-rate-grid {
+  grid-template-columns: 0.7fr 1.3fr;
+}
+.lessons-rate-relationship {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 38px;
+  border-top: 1px solid var(--line);
+}
+.lessons-rate-relationship span {
+  padding: 11px 8px 11px 0;
+  color: #596164;
+  border-bottom: 1px solid var(--line);
+  font-size: 9px;
+}
+.lessons-rate-relationship span:nth-child(even) {
+  padding-left: 8px;
+  border-left: 1px solid var(--line);
+}
+.lessons-rate-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--ink);
+}
+.lessons-rate-metrics article {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 18px 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+.lessons-rate-metrics article + article {
+  padding-left: 18px;
+  border-left: 1px solid var(--line);
+}
+.lessons-rate-metrics strong {
+  color: var(--ink);
+  font: 500 clamp(42px, 4vw, 62px) / 0.9 "Cormorant Garamond", serif;
+}
+.lessons-rate-metrics span {
+  color: #596164;
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.lessons-exit-grid > div:first-child > p {
+  color: rgba(255, 255, 255, 0.6);
+}
+.lessons-exit-list {
+  border-top-color: rgba(255, 255, 255, 0.42);
+}
+.lessons-exit-list > div {
+  border-bottom-color: rgba(255, 255, 255, 0.17);
+}
+.lessons-exit-list p {
+  color: rgba(255, 255, 255, 0.66);
+}
+.lessons-change-table {
+  border-top-color: var(--ink);
+}
+.lessons-change-table .lessons-table-head,
+.lessons-change-table > div:not(.lessons-table-head) {
+  border-bottom-color: var(--line);
+}
+.lessons-change-table .lessons-table-head {
+  color: #77766f;
+}
+.lessons-change-table strong {
+  color: var(--ink);
+}
+.lessons-change-table p {
+  color: #596164;
+}
+.lessons-close {
+  padding: 110px 0;
+  background: var(--ivory);
+}
+.lessons-close-grid > div:last-child {
+  padding-top: 30px;
+}
+.lessons-close-grid > div:last-child > p {
+  margin: 0 0 22px;
+  color: #555f62;
+  font-size: 14px;
+  line-height: 1.82;
+}
+.lessons-overview-link {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  margin-top: 48px;
+  padding: 22px 0;
+  color: var(--ink);
+  border-block: 1px solid var(--ink);
+  text-decoration: none;
+}
+.lessons-overview-link span {
+  color: var(--copper);
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.lessons-overview-link strong {
+  margin-top: 8px;
+  font: 500 29px/1 "Cormorant Garamond", serif;
+}
+.lessons-overview-link b {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  color: var(--copper);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media (max-width: 960px) {
+  .lessons-principal-grid,
+  .lessons-operator-grid,
+  .lessons-area-grid,
+  .lessons-information-grid,
+  .lessons-adaptability-grid,
+  .lessons-mockup-grid,
+  .lessons-value-grid,
+  .lessons-leadership-grid,
+  .lessons-rate-grid,
+  .lessons-exit-grid,
+  .lessons-close-grid {
+    gap: 7%;
+  }
+  .lessons-comparison-table > div:not(.lessons-table-head),
+  .lessons-table-head {
+    gap: 16px;
+  }
+  .lessons-cost-equation {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lessons-cost-equation > div:not(:nth-child(4n + 1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+  .lessons-cost-equation > div:nth-child(even) {
+    padding-left: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.17);
+  }
+}
+
+@media (max-width: 720px) {
+  .lessons-hero {
+    min-height: 850px;
+  }
+  .lessons-hero-image {
+    object-position: 66% center;
+  }
+  .lessons-hero-content {
+    padding: 125px 0 215px;
+  }
+  .lessons-hero h1 {
+    font-size: clamp(56px, 15.5vw, 74px);
+  }
+  .lessons-hero-copy,
+  .lessons-principal-grid,
+  .lessons-operator-grid,
+  .lessons-area-grid,
+  .lessons-information-grid,
+  .lessons-adaptability-grid,
+  .lessons-mockup-grid,
+  .lessons-value-grid,
+  .lessons-leadership-grid,
+  .lessons-rate-grid,
+  .lessons-exit-grid,
+  .lessons-close-grid,
+  .lessons-infrastructure-intro {
+    display: block;
+  }
+  .lessons-hero-copy p + p {
+    margin-top: 17px;
+  }
+  .lessons-hero-line .page-width {
+    grid-template-columns: 1fr 1fr;
+  }
+  .lessons-hero-line span,
+  .lessons-hero-line span + span {
+    padding: 10px 8px 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    border-left: 0;
+    font-size: 7px;
+  }
+  .lessons-hero-line span:nth-child(even) {
+    padding-left: 9px;
+    border-left: 1px solid rgba(255, 255, 255, 0.14);
+  }
+  .lessons-hero-line span:last-child {
+    grid-column: 1 / -1;
+  }
+  .lessons-principal,
+  .lessons-operator,
+  .lessons-infrastructure,
+  .lessons-contract,
+  .lessons-mockups,
+  .lessons-value,
+  .lessons-leadership,
+  .lessons-rate,
+  .lessons-change {
+    padding-block: 82px;
+  }
+  .lessons-sequence,
+  .lessons-area,
+  .lessons-flow,
+  .lessons-information,
+  .lessons-adaptability,
+  .lessons-time,
+  .lessons-commissioning,
+  .lessons-exit-readiness,
+  .lessons-close {
+    padding-block: 78px;
+  }
+  .lessons-numbered-list,
+  .lessons-preferred-sequence,
+  .lessons-area-system,
+  .lessons-control-list,
+  .lessons-adaptability-list,
+  .lessons-exit-list,
+  .lessons-value-tests,
+  .lessons-rate-metrics {
+    margin-top: 50px;
+  }
+  .lessons-principle-note,
+  .lessons-dark-note {
+    margin-left: 0;
+  }
+  .lessons-table-head {
+    display: none;
+  }
+  .lessons-comparison-table > div:not(.lessons-table-head),
+  .lessons-evidence-table > div:not(.lessons-table-head) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 8px 0 18px;
+  }
+  .lessons-comparison-table [data-label],
+  .lessons-evidence-table [data-label] {
+    padding: 12px 0 0;
+  }
+  .lessons-comparison-table [data-label]::before,
+  .lessons-evidence-table [data-label]::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 7px;
+    color: var(--copper);
+    font: 500 7px/1 sans-serif;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .lessons-preferred-sequence {
+    grid-template-columns: 1fr 1fr;
+  }
+  .lessons-area-grid > div:first-child,
+  .lessons-information-grid > div:first-child,
+  .lessons-adaptability-grid > div:first-child,
+  .lessons-exit-grid > div:first-child {
+    margin-bottom: 55px;
+  }
+  .lessons-area-system {
+    grid-template-columns: 1fr 1fr;
+  }
+  .lessons-area-system > span:not(:nth-child(3n + 1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+  .lessons-area-system > span:nth-child(even) {
+    padding-left: 10px;
+    border-left: 1px solid var(--line);
+  }
+  .lessons-infrastructure-intro > strong {
+    margin-top: 42px;
+  }
+  .lessons-flow-grid {
+    grid-template-columns: 1fr;
+  }
+  .lessons-flow-grid article,
+  .lessons-flow-grid article + article {
+    padding: 18px 0 28px;
+    border-left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+  }
+  .lessons-mockup-grid > div + div {
+    margin-top: 55px;
+  }
+  .lessons-adaptability-list {
+    grid-template-columns: 1fr;
+  }
+  .lessons-adaptability-list > div:nth-child(even) {
+    padding-left: 0;
+    border-left: 0;
+  }
+  .lessons-cost-equation {
+    grid-template-columns: 1fr 1fr;
+  }
+  .lessons-checklist {
+    grid-template-columns: 1fr 1fr;
+  }
+  .lessons-checklist span:not(:nth-child(3n + 1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+  .lessons-checklist span:nth-child(even) {
+    padding-left: 12px;
+    border-left: 1px solid var(--line);
+  }
+  .lessons-rate-metrics {
+    grid-template-columns: 1fr;
+  }
+  .lessons-rate-metrics article,
+  .lessons-rate-metrics article + article {
+    min-height: 135px;
+    padding: 20px 0;
+    border-left: 0;
+  }
+  .lessons-close-grid > div:last-child {
+    padding-top: 40px;
+  }
+}
