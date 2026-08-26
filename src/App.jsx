@@ -42,6 +42,7 @@ import ConstructionPage from "./pages/ConstructionPage";
 import OperationsPage from "./pages/OperationsPage";
 import ExitPage from "./pages/ExitPage";
 import LessonsPage from "./pages/LessonsPage";
+import LibraryPage from "./pages/LibraryPage";
 import "./App.css";
 
 const siteUrl = "https://marriott.viji.com";
@@ -102,6 +103,12 @@ const routeSeo = {
     description:
       "A candid record of the planning, sequencing, coordination, commissioning and operating lessons established by the Weligama resort development.",
     label: "Lessons",
+  },
+  "/library": {
+    title: "Project Library | Marriott Weligama Development Record",
+    description:
+      "A curated archive of the reports, drawings, approvals, financial records and operating evidence behind the Marriott Weligama development.",
+    label: "Project Library",
   },
 };
 
@@ -571,7 +578,7 @@ function Footer() {
           <Link to="/overview">Project Overview</Link>
           <Link to="/development">Development Guide</Link>
           <Link to="/lessons">Lessons</Link>
-          <span>Project Library</span>
+          <Link to="/library">Project Library</Link>
         </nav>
       </div>
       <div className="page-width copyright">
@@ -635,6 +642,7 @@ function App() {
         <Route path="/operations" element={<OperationsPage />} />
         <Route path="/exit" element={<ExitPage />} />
         <Route path="/lessons" element={<LessonsPage />} />
+        <Route path="/library" element={<LibraryPage />} />
         {Object.entries(pageData).map(([path, [section, title, intro]]) => (
           <Route
             key={path}

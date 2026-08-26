@@ -7,6 +7,7 @@ export const navItems = [
   ["Operations", "/operations"],
   ["Exit", "/exit"],
   ["Lessons", "/lessons"],
+  ["Library", "/library"],
 ];
 export const facts = [
   ["198", "Keys"],

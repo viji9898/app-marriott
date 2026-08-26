@@ -16,6 +16,7 @@ Language: English
 - [Operations](https://marriott.viji.com/operations): Mobilisation, opening, demand development and stabilised operating performance.
 - [Exit](https://marriott.viji.com/exit): The 19 April 2019 share sale, valuation and operator continuity.
 - [Lessons](https://marriott.viji.com/lessons): Specific changes that would inform the structure of a future development.
+- [Library](https://marriott.viji.com/library): Curated project records with evidence and access classifications.
 
 ## Verified project facts
 
