@@ -90,6 +90,16 @@ function LibraryStats() {
 }
 
 function FormatPlaceholder({ record }) {
+  if (record.thumbnail) {
+    return (
+      <img
+        className="library-format-thumbnail"
+        src={record.thumbnail}
+        alt={`${record.shortTitle} report cover`}
+      />
+    );
+  }
+
   return (
     <div className="library-format-placeholder" aria-hidden="true">
       <span>{record.format}</span>

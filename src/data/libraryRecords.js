@@ -36,11 +36,34 @@ export const LIBRARY_RECORDS = [
   },
   {
     id: "MW-FEA-001",
-    slug: "hvs-marriott-feasibility-study-and-valuation-report",
-    title: "HVS Marriott Feasibility Study and Valuation Report",
-    shortTitle: "HVS Feasibility Study",
+    slug: "hvs-updated-198-key-marriott-feasibility-study",
+    title: "HVS Updated Feasibility Study — 198-Key Marriott Resort & Spa",
+    shortTitle: "Updated HVS Feasibility Study",
     description:
-      "An independent HVS market research, feasibility and valuation report prepared for the proposed Marriott resort development.",
+      "The updated HVS market research, feasibility and valuation report for the proposed 198-key Marriott Resort & Spa at Weligama Bay.",
+    phase: "Feasibility",
+    type: "Feasibility Study",
+    format: "PDF",
+    date: "31 July 2012",
+    pages: 118,
+    evidenceStatus: "Contemporaneous record",
+    access: "Public",
+    featured: true,
+    fileUrl:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-marriott-case-study/hvs/Final+Report+Five+star+Resort%2C+Weligama+Bay%2C+Sri+Lanka+-+Updated+to+198+Key+Marriott+Resort+%26+Spa.pdf",
+    thumbnail:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-marriott-case-study/hvs/hvs-report-thumbnail-desktop.webp",
+    relatedRoutes: ["/opportunity", "/development"],
+    notes:
+      "This updated report records the independent market and feasibility analysis for the revised 198-key Marriott resort programme. The updated and initial HVS files are retained as separate archival references even though the supplied PDFs are byte-identical.",
+  },
+  {
+    id: "MW-FEA-004",
+    slug: "hvs-initial-marriott-feasibility-study-and-valuation-report",
+    title: "HVS Initial Marriott Feasibility Study and Valuation Report",
+    shortTitle: "Initial HVS Feasibility Study",
+    description:
+      "The initial HVS market research, feasibility and valuation report supplied for the proposed Marriott resort development at Weligama Bay.",
     phase: "Feasibility",
     type: "Feasibility Study",
     format: "PDF",
@@ -48,13 +71,79 @@ export const LIBRARY_RECORDS = [
     pages: 118,
     evidenceStatus: "Contemporaneous record",
     access: "Public",
-    featured: true,
+    featured: false,
     fileUrl:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-marriott-case-study/hvs/2012-01-27+HVS-Marriott+Feasibility+STudy+and+Valuation+Report.pdf",
     thumbnail: null,
     relatedRoutes: ["/opportunity", "/development"],
     notes:
-      "The report records the independent market and feasibility analysis used to assess the proposed hotel development and its valuation context.",
+      "This record preserves the initial filename-dated HVS document separately from the updated 198-key edition. The two supplied URLs currently resolve to byte-identical PDF files.",
+  },
+  {
+    id: "MW-FEA-002",
+    slug: "spectra-market-research-and-economic-feasibility-study",
+    title: "Spectra Hospitality Market Research and Economic Feasibility Study",
+    shortTitle: "Spectra Feasibility Study",
+    description:
+      "A final market research and economic feasibility study prepared by Spectra Hospitality for the proposed Weligama hotel development.",
+    phase: "Feasibility",
+    type: "Feasibility Study",
+    format: "PDF",
+    date: "2 March 2011",
+    pages: 47,
+    evidenceStatus: "Contemporaneous record",
+    access: "Public",
+    featured: false,
+    fileUrl:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-marriott-case-study/spectra-hospitality/Market+Research+and+Economic+Feasibility+Study-+Weligama+(1).pdf",
+    thumbnail: null,
+    relatedRoutes: ["/opportunity", "/development"],
+    notes:
+      "The report documents Spectra Hospitality’s contemporaneous market research and economic feasibility assessment for the Weligama project.",
+  },
+  {
+    id: "MW-FEA-003",
+    slug: "spectra-forecast-profit-and-loss-weligama-hotel",
+    title: "Spectra Hospitality Forecast Profit and Loss — Weligama Hotel",
+    shortTitle: "Spectra Forecast P&L",
+    description:
+      "The supporting Excel workbook containing Spectra Hospitality’s forecast profit-and-loss assumptions for the proposed Weligama hotel.",
+    phase: "Feasibility",
+    type: "Financial Forecast",
+    format: "XLS",
+    date: "4 April 2011",
+    pages: null,
+    evidenceStatus: "Contemporaneous record",
+    access: "Public",
+    featured: false,
+    fileUrl:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-marriott-case-study/spectra-hospitality/2011-04-04+Forecasted+P%26L+Weligama+Hotel+-+Spectra+Hospitality.xls",
+    thumbnail: null,
+    relatedRoutes: ["/opportunity", "/development"],
+    notes:
+      "The workbook is the financial forecast associated with Spectra Hospitality’s market research and economic feasibility work.",
+  },
+  {
+    id: "MW-FIN-001",
+    slug: "whp-marriott-private-equity-information-memorandum",
+    title: "WHP Marriott Private Equity Information Memorandum",
+    shortTitle: "Private Equity Information Memorandum",
+    description:
+      "The information memorandum used to raise up to LKR 1.755 billion through the issue of ordinary voting shares for the Marriott resort development.",
+    phase: "Finance",
+    type: "Information Memorandum",
+    format: "PDF",
+    date: "13 May 2014",
+    pages: 90,
+    evidenceStatus: "Contemporaneous record",
+    access: "Public",
+    featured: false,
+    fileUrl:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-marriott-case-study/private-equity-im-lsl/2014+05+13+IM+WHP+Marriott+edited+-+Updated.pdf",
+    thumbnail: null,
+    relatedRoutes: ["/overview", "/development"],
+    notes:
+      "The proposed capital raise comprised the issue of up to 195,000,000 ordinary voting shares at LKR 9.00 per share, representing aggregate proceeds of up to LKR 1.755 billion.",
   },
   {
     id: "MW-CORE-002",
