@@ -61,4 +61,92 @@ export const LIBRARY_RECORDS = [
     notes:
       "The source contains informal language, placeholders and conflicting dates. Edited extracts are required before public release.",
   },
+  {
+    id: "MW-APP-001",
+    slug: "sltda-one-stop-unit-presentation-21-july-2011",
+    title: "SLTDA One Stop Unit Presentation",
+    shortTitle: "One Stop Unit Presentation",
+    description:
+      "A contemporaneous Sri Lanka Tourism Development Authority presentation on the One Stop Unit process for coordinating tourism-project approvals across government agencies.",
+    phase: "Approvals",
+    type: "Regulatory Presentation",
+    format: "PDF",
+    date: "21 July 2011",
+    pages: 15,
+    evidenceStatus: "Contemporaneous record",
+    access: "Public",
+    featured: false,
+    fileUrl:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-marriott-case-study/one-stop-unit/SLTDA+One+Stop+Unit+Presentation++-+21+July+2011.pdf",
+    thumbnail: null,
+    relatedRoutes: ["/development", "/design", "/construction"],
+    notes:
+      "The One Stop Unit coordinated review by the SLTDA and related government agencies as part of the statutory tourism-project approval process.",
+  },
+  {
+    id: "MW-APP-002",
+    slug: "uda-building-heights-presentation-12-august-2011",
+    title: "UDA Presentation on Building Heights",
+    shortTitle: "UDA Building Heights Presentation",
+    description:
+      "A contemporaneous Urban Development Authority presentation addressing building-height controls relevant to development planning and approval.",
+    phase: "Approvals",
+    type: "Regulatory Presentation",
+    format: "PDF",
+    date: "12 August 2011",
+    pages: 32,
+    evidenceStatus: "Contemporaneous record",
+    access: "Public",
+    featured: false,
+    fileUrl:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-marriott-case-study/one-stop-unit/UDA+Presentation+Building+Hieghts++-+12+August+2011.pdf",
+    thumbnail: null,
+    relatedRoutes: ["/development", "/design", "/construction"],
+    notes:
+      "The Urban Development Authority is the statutory authority responsible for approving construction plans and issuing building permits within its jurisdiction.",
+  },
+  {
+    id: "MW-APP-003",
+    slug: "one-stop-unit-application-form",
+    title: "SLTDA One Stop Unit Application Form",
+    shortTitle: "One Stop Unit Application Form",
+    description:
+      "The application form used to submit a tourism development proposal through the SLTDA One Stop Unit statutory approval process.",
+    phase: "Approvals",
+    type: "Application Form",
+    format: "PDF",
+    date: "8 February 2011",
+    pages: 19,
+    evidenceStatus: "Contemporaneous record",
+    access: "Public",
+    featured: false,
+    fileUrl:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-marriott-case-study/one-stop-unit/One+Stop+Unit+-+Application+Form.pdf",
+    thumbnail: null,
+    relatedRoutes: ["/development", "/design", "/construction"],
+    notes:
+      "The form records the information required for agency review. Its embedded PDF metadata is dated 8 February 2011.",
+  },
+  {
+    id: "MW-APP-004",
+    slug: "full-one-stop-unit-application",
+    title: "Full SLTDA One Stop Unit Application",
+    shortTitle: "Full One Stop Unit Application",
+    description:
+      "The compiled project application submitted through the SLTDA One Stop Unit for coordinated statutory review and agency clearances.",
+    phase: "Approvals",
+    type: "Statutory Application",
+    format: "PDF",
+    date: "2011",
+    pages: null,
+    evidenceStatus: "Contemporaneous record",
+    access: "Public",
+    featured: false,
+    fileUrl:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-marriott-case-study/one-stop-unit/Full+Application+-+One+Stop+Unit.pdf",
+    thumbnail: null,
+    relatedRoutes: ["/development", "/design", "/construction"],
+    notes:
+      "The application documents the project submission used to coordinate statutory review by the SLTDA and related agencies, including the Urban Development Authority.",
+  },
 ];
