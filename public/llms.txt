@@ -1,0 +1,37 @@
+# Weligama Bay Marriott Development Record
+
+> A factual, full-cycle record of originating, financing, designing, constructing, operating and exiting a 198-key Marriott resort in Weligama, Sri Lanka.
+
+Canonical site: https://marriott.viji.com/
+Language: English
+
+## Project record
+
+- [Home](https://marriott.viji.com/): Introduction to the complete hotel development record.
+- [Overview](https://marriott.viji.com/overview): Project scope, capital structure, delivery sequence, operating performance and transaction outcome.
+- [Opportunity](https://marriott.viji.com/opportunity): Market, product and beachfront-site thesis before acquisition and design.
+- [Development](https://marriott.viji.com/development): Coastal search, land assembly, acquisition, operator engagement and capital formation.
+- [Design](https://marriott.viji.com/design): Architecture, operating requirements, area planning and Marriott standards.
+- [Construction](https://marriott.viji.com/construction): Delivery control, specialist coordination, infrastructure, procurement and commissioning.
+- [Operations](https://marriott.viji.com/operations): Mobilisation, opening, demand development and stabilised operating performance.
+- [Exit](https://marriott.viji.com/exit): The 19 April 2019 share sale, valuation and operator continuity.
+- [Lessons](https://marriott.viji.com/lessons): Specific changes that would inform the structure of a future development.
+
+## Verified project facts
+
+- Location: Weligama, Sri Lanka
+- Hotel inventory: 198 keys
+- Total development cost: USD 42 million
+- Stabilised occupancy: 75%
+- Stabilised average daily rate: USD 155
+- Stabilised gross operating profit margin: 38%
+- Exit date: 19 April 2019
+- Transaction structure: Share sale
+- Enterprise value: USD 57 million
+- Operator following the transaction: Marriott International
+
+## Source and interpretation notes
+
+- The site distinguishes verified figures from narrative or reported figures.
+- The reported 120% ROI is not presented as independently reconciled because detailed equity cash-flow schedules are unavailable.
+- The transaction predates later disruption in Sri Lanka; the record does not claim those events were anticipated.

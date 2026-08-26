@@ -44,6 +44,67 @@ import ExitPage from "./pages/ExitPage";
 import LessonsPage from "./pages/LessonsPage";
 import "./App.css";
 
+const siteUrl = "https://marriott.viji.com";
+const socialImage =
+  "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-marriott-case-study/hero-weligama-bay-marriott-view-for-balcony.webp";
+
+const routeSeo = {
+  "/": {
+    title: "Inside the Development | Weligama Bay Marriott Resort",
+    description:
+      "The full development record of a 198-key Marriott resort in Weligama, Sri Lanka, from origination and construction through operations and exit.",
+    label: "Development Record",
+  },
+  "/overview": {
+    title: "Project Overview | Weligama Bay Marriott Development Record",
+    description:
+      "Project overview of the 198-key Weligama Bay Marriott Resort & Spa: origination, capital structure, delivery, stabilised operations and the 2019 share sale.",
+    label: "Project Overview",
+  },
+  "/opportunity": {
+    title: "The Opportunity | Weligama Bay Marriott Development Record",
+    description:
+      "The market, product and site thesis behind the Weligama Bay Marriott development before land acquisition, brand agreement and final design.",
+    label: "Opportunity",
+  },
+  "/development": {
+    title: "Development / Origination | Weligama Bay Marriott Development Record",
+    description:
+      "How the Weligama Bay Marriott market thesis became a controlled development site through coastal search, land assembly and acquisition.",
+    label: "Development",
+  },
+  "/design": {
+    title: "Design | Weligama Bay Marriott Development Record",
+    description:
+      "How the bay, constrained site, Marriott standards and operating requirements shaped the design of the 198-key Weligama Bay resort.",
+    label: "Design",
+  },
+  "/construction": {
+    title: "Construction | Weligama Bay Marriott Development Record",
+    description:
+      "The direct-control delivery, specialist coordination, infrastructure, procurement and commissioning of the 198-key Weligama resort.",
+    label: "Construction",
+  },
+  "/operations": {
+    title: "Operations | Weligama Bay Marriott Development Record",
+    description:
+      "How the 198-key Weligama resort was mobilised, opened, operated and stabilised at 75% occupancy, USD 155 ADR and a 38% GOP margin.",
+    label: "Operations",
+  },
+  "/exit": {
+    title: "Exit | Weligama Bay Marriott Development Record",
+    description:
+      "The 19 April 2019 share sale of the 198-key Weligama resort at a USD 57 million enterprise value, with Marriott retained as operator.",
+    label: "Exit",
+  },
+  "/lessons": {
+    title: "Lessons | Weligama Bay Marriott Development Record",
+    description:
+      "A candid record of the planning, sequencing, coordination, commissioning and operating lessons established by the Weligama resort development.",
+    label: "Lessons",
+  },
+};
+
 const stages = [
   ["01", "Originate", Compass],
   ["02", "Underwrite", Calculator],
@@ -53,6 +114,87 @@ const stages = [
   ["06", "Operate", Activity],
   ["07", "Exit", LogOut],
 ];
+
+function RouteSeo() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    const normalizedPath = pathname.replace(/\/+$/, "") || "/";
+    const page = routeSeo[normalizedPath];
+    const canonicalUrl = `${siteUrl}${normalizedPath === "/" ? "/" : normalizedPath}`;
+    const title = page?.title || "Page not found | Weligama Development Record";
+    const description =
+      page?.description || "This page is not part of the Weligama development record.";
+
+    const setMeta = (selector, attribute, value, content) => {
+      let element = document.head.querySelector(selector);
+      if (!element) {
+        element = document.createElement("meta");
+        element.setAttribute(attribute, value);
+        document.head.appendChild(element);
+      }
+      element.setAttribute("content", content);
+    };
+
+    document.title = title;
+    document.querySelector('link[rel="canonical"]')?.setAttribute("href", canonicalUrl);
+    setMeta('meta[name="description"]', "name", "description", description);
+    setMeta(
+      'meta[name="robots"]',
+      "name",
+      "robots",
+      page ? "index, follow, max-image-preview:large" : "noindex, nofollow",
+    );
+    setMeta('meta[property="og:title"]', "property", "og:title", title);
+    setMeta('meta[property="og:description"]', "property", "og:description", description);
+    setMeta('meta[property="og:url"]', "property", "og:url", canonicalUrl);
+    setMeta('meta[property="og:image"]', "property", "og:image", socialImage);
+    setMeta('meta[name="twitter:title"]', "name", "twitter:title", title);
+    setMeta('meta[name="twitter:description"]', "name", "twitter:description", description);
+    setMeta('meta[name="twitter:image"]', "name", "twitter:image", socialImage);
+
+    let schema = document.querySelector("#route-seo-schema");
+    if (!schema) {
+      schema = document.createElement("script");
+      schema.id = "route-seo-schema";
+      schema.type = "application/ld+json";
+      document.head.appendChild(schema);
+    }
+    schema.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: title,
+      description,
+      url: canonicalUrl,
+      isPartOf: { "@id": `${siteUrl}/#website` },
+      primaryImageOfPage: socialImage,
+      inLanguage: "en",
+      ...(page && normalizedPath !== "/"
+        ? {
+            breadcrumb: {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Development Record",
+                  item: `${siteUrl}/`,
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: page.label,
+                  item: canonicalUrl,
+                },
+              ],
+            },
+          }
+        : {}),
+    });
+  }, [pathname]);
+
+  return null;
+}
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -481,6 +623,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <RouteSeo />
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
