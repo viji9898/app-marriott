@@ -72,7 +72,8 @@ const routeSeo = {
     label: "Opportunity",
   },
   "/development": {
-    title: "Development / Origination | Weligama Bay Marriott Development Record",
+    title:
+      "Development / Origination | Weligama Bay Marriott Development Record",
     description:
       "How the Weligama Bay Marriott market thesis became a controlled development site through coastal search, land assembly and acquisition.",
     label: "Development",
@@ -140,7 +141,8 @@ function RouteSeo() {
     const canonicalUrl = `${siteUrl}${normalizedPath === "/" ? "/" : normalizedPath}`;
     const title = page?.title || "Page not found | Weligama Development Record";
     const description =
-      page?.description || "This page is not part of the Weligama development record.";
+      page?.description ||
+      "This page is not part of the Weligama development record.";
 
     const setMeta = (selector, attribute, value, content) => {
       let element = document.head.querySelector(selector);
@@ -153,7 +155,9 @@ function RouteSeo() {
     };
 
     document.title = title;
-    document.querySelector('link[rel="canonical"]')?.setAttribute("href", canonicalUrl);
+    document
+      .querySelector('link[rel="canonical"]')
+      ?.setAttribute("href", canonicalUrl);
     setMeta('meta[name="description"]', "name", "description", description);
     setMeta(
       'meta[name="robots"]',
@@ -162,11 +166,21 @@ function RouteSeo() {
       page ? "index, follow, max-image-preview:large" : "noindex, nofollow",
     );
     setMeta('meta[property="og:title"]', "property", "og:title", title);
-    setMeta('meta[property="og:description"]', "property", "og:description", description);
+    setMeta(
+      'meta[property="og:description"]',
+      "property",
+      "og:description",
+      description,
+    );
     setMeta('meta[property="og:url"]', "property", "og:url", canonicalUrl);
     setMeta('meta[property="og:image"]', "property", "og:image", socialImage);
     setMeta('meta[name="twitter:title"]', "name", "twitter:title", title);
-    setMeta('meta[name="twitter:description"]', "name", "twitter:description", description);
+    setMeta(
+      'meta[name="twitter:description"]',
+      "name",
+      "twitter:description",
+      description,
+    );
     setMeta('meta[name="twitter:image"]', "name", "twitter:image", socialImage);
 
     let schema = document.querySelector("#route-seo-schema");
@@ -606,7 +620,9 @@ function Footer() {
           </Link>
           <p>
             A first-person record of originating, financing, delivering,
-            operating and exiting a 198-key hospitality asset in Sri Lanka.
+            operating and exiting a 198-key hospitality asset in Sri Lanka. I am
+            deeply grateful to my father for giving my sister and me the
+            opportunity to work on a project of this scale and significance ❤️.
           </p>
         </div>
         <nav aria-label="Footer navigation">
