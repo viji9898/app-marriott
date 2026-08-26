@@ -122,6 +122,16 @@ const stages = [
   ["07", "Exit", LogOut],
 ];
 
+const projectTeam = [
+  ["Marriott International", "Hotel Brand & Operator"],
+  ["Belt Collins", "Landscape Architecture"],
+  ["Wilson Associates", "Interior Design"],
+  ["East West Engineering", "Main Contractor"],
+  ["Shin Nippon", "Plumbing Contractor"],
+  ["Access Engineering", "HVAC Contractor"],
+  ["Fentons", "Electrical & ELV Contractor"],
+];
+
 function RouteSeo() {
   const { pathname } = useLocation();
 
@@ -529,6 +539,41 @@ function OutcomeMetrics() {
     </section>
   );
 }
+function ProjectTeam() {
+  const [expanded, setExpanded] = useState(false);
+  const visibleTeam = expanded ? projectTeam : projectTeam.slice(0, 4);
+
+  return (
+    <section className="project-team">
+      <div className="page-width">
+        <div className="project-team-heading">
+          <p className="eyebrow eyebrow-dark">THE PROJECT TEAM</p>
+          <p>
+            Specialist consultants and contractors appointed to design, deliver
+            and operate the resort.
+          </p>
+        </div>
+        <div className="project-team-grid" id="project-team-list">
+          {visibleTeam.map(([organisation, role]) => (
+            <article key={organisation}>
+              <h3>{organisation}</h3>
+              <p>{role}</p>
+            </article>
+          ))}
+        </div>
+        <button
+          className="project-team-toggle"
+          type="button"
+          aria-expanded={expanded}
+          aria-controls="project-team-list"
+          onClick={() => setExpanded((current) => !current)}
+        >
+          {expanded ? "Show less" : "View more"}
+        </button>
+      </div>
+    </section>
+  );
+}
 function LibraryPreview() {
   const icons = [PencilRuler, Map, Banknote, ClipboardCheck, HardHat, Camera];
   return (
@@ -595,6 +640,7 @@ function HomePage() {
       <DevelopmentTimeline />
       <ChapterGrid />
       <OutcomeMetrics />
+      <ProjectTeam />
       {window.location.hash === "#extended" && (
         <>
           <SectionIntro />
