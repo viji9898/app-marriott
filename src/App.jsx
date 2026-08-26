@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter,
+  Link,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import {
   ArrowRight,
   Menu,
@@ -28,6 +34,8 @@ import {
   outcomes,
   pageData,
 } from "./data/projectData";
+import OverviewPage from "./pages/OverviewPage";
+import OpportunityPage from "./pages/OpportunityPage";
 import "./App.css";
 
 const stages = [
@@ -43,6 +51,7 @@ const stages = [
 function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { pathname } = useLocation();
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", onScroll);
@@ -56,7 +65,11 @@ function Header() {
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {navItems.map(([label, path]) => (
-            <Link key={path} to={path}>
+            <Link
+              key={path}
+              to={path}
+              aria-current={pathname === path ? "page" : undefined}
+            >
               {label}
             </Link>
           ))}
@@ -78,7 +91,12 @@ function Header() {
           aria-label="Mobile navigation"
         >
           {navItems.map(([label, path]) => (
-            <Link key={path} to={path} onClick={() => setOpen(false)}>
+            <Link
+              key={path}
+              to={path}
+              aria-current={pathname === path ? "page" : undefined}
+              onClick={() => setOpen(false)}
+            >
               {label}
               <ArrowRight size={16} />
             </Link>
@@ -87,6 +105,15 @@ function Header() {
       )}
     </header>
   );
+}
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
 }
 function Hero() {
   return (
@@ -447,9 +474,12 @@ function PlaceholderPage({ section, title, intro }) {
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/overview" element={<OverviewPage />} />
+        <Route path="/opportunity" element={<OpportunityPage />} />
         {Object.entries(pageData).map(([path, [section, title, intro]]) => (
           <Route
             key={path}
