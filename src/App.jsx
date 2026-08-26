@@ -148,7 +148,7 @@ function SectionIntro() {
       </div>
       <div className="intro-copy">
         <p>
-            The project was conceived following the end of Sri Lanka’s civil war,
+          The project was conceived following the end of Sri Lanka’s civil war,
           when tourism demand was accelerating but internationally branded
           resort supply remained limited outside Colombo.
         </p>
@@ -280,9 +280,9 @@ function DecisionFlow() {
           of connected decisions
         </h2>
         <p className="decision-copy">
-          Room count, brand standards, area efficiency,
-          construction cost, operating performance and exit value
-          cannot be considered independently. Each decision changes the economics and operational
+          Room count, brand standards, area efficiency, construction cost,
+          operating performance and exit value cannot be considered
+          independently. Each decision changes the economics and operational
           capability of the completed asset.
         </p>
         <div className="flow">
