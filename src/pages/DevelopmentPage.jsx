@@ -8,7 +8,10 @@ const projectImage =
 const primaryCriteria = [
   ["Road frontage", "Clear access for guests, construction and servicing."],
   ["Sea frontage", "Direct connection to the resort’s principal amenity."],
-  ["Uninterrupted views", "The ability to make the bay central to the guest experience."],
+  [
+    "Uninterrupted views",
+    "The ability to make the bay central to the guest experience.",
+  ],
 ];
 
 const searchChecks = [
@@ -191,8 +194,8 @@ function DevelopmentPage() {
             <p>
               The search began in Colombo and proceeded around Sri Lanka’s
               coastline. Sites were inspected physically rather than assessed
-              from maps alone. Several promising locations were revisited two
-              or three times; very few met the complete development brief.
+              from maps alone. Several promising locations were revisited two or
+              three times; very few met the complete development brief.
             </p>
           </div>
           <div className="development-search-data">
@@ -255,25 +258,31 @@ function DevelopmentPage() {
           />
           <div className="development-design-intro">
             <p>
-              The original preference had been for a low-rise resort
-              distributed across a larger site. Weligama did not provide enough
-              land for that approach at the scale under consideration. Building
+              The original preference had been for a low-rise resort distributed
+              across a larger site. Weligama did not provide enough land for
+              that approach at the scale under consideration. Building
               vertically became the practical response.
             </p>
             <p>
               Every guest room would face the ocean. The additional building
-              area of a single-loaded configuration was accepted because the
-              bay view was considered fundamental to the product and its future
-              rate position.
+              area of a single-loaded configuration was accepted because the bay
+              view was considered fundamental to the product and its future rate
+              position.
             </p>
           </div>
-          <div className="development-corridors" aria-label="Schematic comparison of corridor configurations">
+          <div
+            className="development-corridors"
+            aria-label="Schematic comparison of corridor configurations"
+          >
             <article>
               <div className="development-diagram-label">
                 <span>01</span>
                 <h3>Conventional double-loaded corridor</h3>
               </div>
-              <div className="corridor-diagram corridor-double" aria-hidden="true">
+              <div
+                className="corridor-diagram corridor-double"
+                aria-hidden="true"
+              >
                 <div className="corridor-rooms corridor-rooms-top" />
                 <div className="corridor-path">CORRIDOR</div>
                 <div className="corridor-rooms corridor-rooms-bottom" />
@@ -285,7 +294,10 @@ function DevelopmentPage() {
                 <span>02</span>
                 <h3>Weligama single-loaded configuration</h3>
               </div>
-              <div className="corridor-diagram corridor-single" aria-hidden="true">
+              <div
+                className="corridor-diagram corridor-single"
+                aria-hidden="true"
+              >
                 <div className="corridor-sea">WELIGAMA BAY</div>
                 <div className="corridor-rooms corridor-rooms-top" />
                 <div className="corridor-path">CORRIDOR</div>
@@ -335,7 +347,9 @@ function DevelopmentPage() {
             <span>03</span>
             <strong>Remaining parcel</strong>
           </div>
-          <figcaption>Schematic acquisition sequence, not a surveyed site plan.</figcaption>
+          <figcaption>
+            Schematic acquisition sequence, not a surveyed site plan.
+          </figcaption>
         </figure>
       </section>
 
@@ -363,13 +377,13 @@ function DevelopmentPage() {
                 established.
               </p>
               <p className="development-emphasis">
-                The decision preserved control of a site considered difficult
-                to replicate.
+                The decision preserved control of a site considered difficult to
+                replicate.
               </p>
               <p>
                 It also provided a tangible development proposition that could
-                later be presented to architects, consultants, lenders and
-                hotel operators.
+                later be presented to architects, consultants, lenders and hotel
+                operators.
               </p>
             </div>
           </div>
@@ -475,8 +489,8 @@ function DevelopmentPage() {
               central beachfront position within Weligama Bay.
             </p>
             <p>
-              The next stage required the early concept to be translated into
-              an approved, technically viable and financeable hotel. That meant
+              The next stage required the early concept to be translated into an
+              approved, technically viable and financeable hotel. That meant
               resolving planning constraints, defining the building programme
               and securing an international operator.
             </p>

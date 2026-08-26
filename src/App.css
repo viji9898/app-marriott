@@ -2933,7 +2933,9 @@ footer {
 .design-hero h1 {
   max-width: 960px;
   margin: 0;
-  font: 500 clamp(62px, 7.4vw, 112px) / 0.88 "Cormorant Garamond", serif;
+  font:
+    500 clamp(62px, 7.4vw, 112px) / 0.88 "Cormorant Garamond",
+    serif;
   letter-spacing: -0.03em;
 }
 .design-hero-copy {
@@ -2983,7 +2985,9 @@ footer {
   max-width: 820px;
   margin: 0;
   color: var(--ink);
-  font: 500 clamp(46px, 5.2vw, 76px) / 0.93 "Cormorant Garamond", serif;
+  font:
+    500 clamp(46px, 5.2vw, 76px) / 0.93 "Cormorant Garamond",
+    serif;
   letter-spacing: -0.025em;
 }
 .design-section-copy {
@@ -3010,7 +3014,9 @@ footer {
 }
 .design-emphasis {
   color: var(--ink);
-  font: 500 24px/1.4 "Cormorant Garamond", serif;
+  font:
+    500 24px/1.4 "Cormorant Garamond",
+    serif;
 }
 .design-priority-table {
   margin: 45px 0;
@@ -3036,7 +3042,9 @@ footer {
 .design-lessons-list h3 {
   margin: -3px 0 0;
   color: var(--ink);
-  font: 500 24px/1.08 "Cormorant Garamond", serif;
+  font:
+    500 24px/1.08 "Cormorant Garamond",
+    serif;
 }
 .design-priority-table p,
 .design-venue-table p,
@@ -3092,7 +3100,9 @@ footer {
 .design-corridor-comparison h3 {
   margin: 0;
   color: var(--ink);
-  font: 500 27px/1 "Cormorant Garamond", serif;
+  font:
+    500 27px/1 "Cormorant Garamond",
+    serif;
 }
 .design-corridor {
   display: grid;
@@ -3223,7 +3233,9 @@ footer {
 .design-flow-groups h3 {
   margin: 30px 0 13px;
   color: var(--ink);
-  font: 500 30px/1 "Cormorant Garamond", serif;
+  font:
+    500 30px/1 "Cormorant Garamond",
+    serif;
 }
 .design-flow-groups p {
   margin: 0;
@@ -3314,7 +3326,9 @@ footer {
 .design-room-standards h3 {
   margin: -3px 0 0;
   color: var(--ink);
-  font: 500 23px/1 "Cormorant Garamond", serif;
+  font:
+    500 23px/1 "Cormorant Garamond",
+    serif;
 }
 .design-room-standards p {
   margin: 0;
@@ -3405,7 +3419,9 @@ footer {
   display: block;
   max-width: 120px;
   color: var(--ink);
-  font: 500 21px/1.08 "Cormorant Garamond", serif;
+  font:
+    500 21px/1.08 "Cormorant Garamond",
+    serif;
 }
 .design-value-process svg {
   position: absolute;
@@ -3419,7 +3435,9 @@ footer {
   padding-top: 20px;
   color: var(--ink);
   border-top: 1px solid var(--line);
-  font: 500 22px/1.4 "Cormorant Garamond", serif;
+  font:
+    500 22px/1.4 "Cormorant Garamond",
+    serif;
 }
 .design-lessons-list {
   margin-top: 65px;
@@ -3452,7 +3470,9 @@ footer {
 .design-next strong {
   grid-column: 1;
   margin-top: 8px;
-  font: 500 29px/1.05 "Cormorant Garamond", serif;
+  font:
+    500 29px/1.05 "Cormorant Garamond",
+    serif;
 }
 .design-next svg {
   grid-column: 2;
@@ -3696,7 +3716,9 @@ footer {
 .construction-hero h1 {
   max-width: 1000px;
   margin: 0;
-  font: 500 clamp(62px, 7.4vw, 112px) / 0.88 "Cormorant Garamond", serif;
+  font:
+    500 clamp(62px, 7.4vw, 112px) / 0.88 "Cormorant Garamond",
+    serif;
   letter-spacing: -0.03em;
 }
 .construction-hero-copy {
@@ -3744,7 +3766,9 @@ footer {
   max-width: 840px;
   margin: 0;
   color: var(--ink);
-  font: 500 clamp(46px, 5.2vw, 76px) / 0.93 "Cormorant Garamond", serif;
+  font:
+    500 clamp(46px, 5.2vw, 76px) / 0.93 "Cormorant Garamond",
+    serif;
   letter-spacing: -0.025em;
 }
 .construction-section-copy {
@@ -3792,7 +3816,9 @@ footer {
 .construction-delivery-table strong,
 .construction-transition-table strong {
   color: var(--ink);
-  font: 500 21px/1.1 "Cormorant Garamond", serif;
+  font:
+    500 21px/1.1 "Cormorant Garamond",
+    serif;
 }
 .construction-delivery-table p,
 .construction-transition-table p {
@@ -3864,7 +3890,9 @@ footer {
   font-size: 9px;
 }
 .construction-control-cycle > div strong {
-  font: 500 23px/1 "Cormorant Garamond", serif;
+  font:
+    500 23px/1 "Cormorant Garamond",
+    serif;
 }
 .construction-control-cycle > div svg {
   position: absolute;
@@ -3969,7 +3997,9 @@ footer {
 .construction-progression strong,
 .construction-procurement-flow strong {
   color: var(--ink);
-  font: 500 25px/1.08 "Cormorant Garamond", serif;
+  font:
+    500 25px/1.08 "Cormorant Garamond",
+    serif;
 }
 .construction-progression svg,
 .construction-procurement-flow svg {
@@ -4006,7 +4036,9 @@ footer {
 .construction-delay,
 .construction-emphasis {
   color: var(--ink);
-  font: 500 23px/1.4 "Cormorant Garamond", serif;
+  font:
+    500 23px/1.4 "Cormorant Garamond",
+    serif;
 }
 .construction-infrastructure-table {
   margin-top: 60px;
@@ -4029,7 +4061,9 @@ footer {
 .construction-lessons-list h3 {
   margin: -3px 0 0;
   color: var(--ink);
-  font: 500 24px/1.08 "Cormorant Garamond", serif;
+  font:
+    500 24px/1.08 "Cormorant Garamond",
+    serif;
 }
 .construction-infrastructure-table p,
 .construction-lessons-list p {
@@ -4061,7 +4095,9 @@ footer {
 }
 .utility-hotel strong,
 .utility-site strong {
-  font: 500 27px/1 "Cormorant Garamond", serif;
+  font:
+    500 27px/1 "Cormorant Garamond",
+    serif;
 }
 .utility-hotel small,
 .utility-site small {
@@ -4127,7 +4163,9 @@ footer {
   padding: 15px 12px 17px 0;
   color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
-  font: 500 21px/1 "Cormorant Garamond", serif;
+  font:
+    500 21px/1 "Cormorant Garamond",
+    serif;
 }
 .construction-trade-grid span:not(:nth-child(4n + 1)) {
   padding-left: 12px;
@@ -4306,7 +4344,9 @@ footer {
 }
 .construction-issues h3 {
   margin: 25px 0 12px;
-  font: 500 24px/1 "Cormorant Garamond", serif;
+  font:
+    500 24px/1 "Cormorant Garamond",
+    serif;
 }
 .construction-issues p {
   margin: 0;
@@ -4345,7 +4385,9 @@ footer {
 .construction-next strong {
   grid-column: 1;
   margin-top: 8px;
-  font: 500 29px/1.05 "Cormorant Garamond", serif;
+  font:
+    500 29px/1.05 "Cormorant Garamond",
+    serif;
 }
 .construction-next svg {
   grid-column: 2;
@@ -4570,7 +4612,9 @@ footer {
 .operations-hero h1 {
   max-width: 980px;
   margin: 0;
-  font: 500 clamp(62px, 7.4vw, 112px) / 0.88 "Cormorant Garamond", serif;
+  font:
+    500 clamp(62px, 7.4vw, 112px) / 0.88 "Cormorant Garamond",
+    serif;
   letter-spacing: -0.03em;
 }
 .operations-hero-copy {
@@ -4612,7 +4656,9 @@ footer {
 }
 .operations-signals strong {
   color: var(--sand);
-  font: 500 28px/1 "Cormorant Garamond", serif;
+  font:
+    500 28px/1 "Cormorant Garamond",
+    serif;
   letter-spacing: 0;
 }
 .operations-section-heading h2,
@@ -4620,7 +4666,9 @@ footer {
   max-width: 850px;
   margin: 0;
   color: var(--ink);
-  font: 500 clamp(46px, 5.2vw, 76px) / 0.93 "Cormorant Garamond", serif;
+  font:
+    500 clamp(46px, 5.2vw, 76px) / 0.93 "Cormorant Garamond",
+    serif;
   letter-spacing: -0.025em;
 }
 .operations-transition,
@@ -4674,7 +4722,9 @@ footer {
 .operations-transition-table strong,
 .operations-governance-table strong {
   color: var(--ink);
-  font: 500 21px/1.1 "Cormorant Garamond", serif;
+  font:
+    500 21px/1.1 "Cormorant Garamond",
+    serif;
 }
 .operations-transition-table p,
 .operations-governance-table p {
@@ -4804,7 +4854,9 @@ footer {
 }
 .operations-emphasis {
   color: var(--ink);
-  font: 500 23px/1.4 "Cormorant Garamond", serif;
+  font:
+    500 23px/1.4 "Cormorant Garamond",
+    serif;
 }
 .operations-positioning,
 .operations-demand,
@@ -4885,7 +4937,9 @@ footer {
 }
 .operations-equation strong {
   color: var(--ink);
-  font: 500 20px/1.1 "Cormorant Garamond", serif;
+  font:
+    500 20px/1.1 "Cormorant Garamond",
+    serif;
   text-align: center;
 }
 .operations-equation b {
@@ -4916,7 +4970,9 @@ footer {
 .operations-lessons-list h3 {
   margin: -3px 0 0;
   color: var(--ink);
-  font: 500 24px/1.08 "Cormorant Garamond", serif;
+  font:
+    500 24px/1.08 "Cormorant Garamond",
+    serif;
 }
 .operations-demand-table p,
 .operations-lessons-list p {
@@ -4943,7 +4999,9 @@ footer {
   padding-left: 18px;
   color: var(--ink);
   border-left: 1px solid var(--line);
-  font: 500 24px/1 "Cormorant Garamond", serif;
+  font:
+    500 24px/1 "Cormorant Garamond",
+    serif;
 }
 .operations-opening-grid {
   align-items: start;
@@ -4956,12 +5014,16 @@ footer {
 }
 .operations-opening-stat strong {
   color: var(--ink);
-  font: 500 100px/0.85 "Cormorant Garamond", serif;
+  font:
+    500 100px/0.85 "Cormorant Garamond",
+    serif;
 }
 .operations-opening-stat span {
   margin-top: 25px;
   color: var(--ink);
-  font: 500 23px/1 "Cormorant Garamond", serif;
+  font:
+    500 23px/1 "Cormorant Garamond",
+    serif;
 }
 .operations-opening-stat small {
   margin-top: 10px;
@@ -5012,7 +5074,9 @@ footer {
 }
 .operations-feedback-loop strong {
   color: var(--ink);
-  font: 500 22px/1 "Cormorant Garamond", serif;
+  font:
+    500 22px/1 "Cormorant Garamond",
+    serif;
 }
 .operations-feedback-loop svg {
   position: absolute;
@@ -5048,12 +5112,16 @@ footer {
 }
 .operations-ramp-timeline strong {
   color: var(--ink);
-  font: 500 52px/1 "Cormorant Garamond", serif;
+  font:
+    500 52px/1 "Cormorant Garamond",
+    serif;
 }
 .operations-ramp-timeline h3 {
   margin: 22px 0 10px;
   color: var(--ink);
-  font: 500 21px/1.05 "Cormorant Garamond", serif;
+  font:
+    500 21px/1.05 "Cormorant Garamond",
+    serif;
 }
 .operations-ramp-timeline p {
   margin: 0;
@@ -5083,12 +5151,16 @@ footer {
 }
 .operations-metrics strong {
   color: var(--sand);
-  font: 500 clamp(52px, 6vw, 82px) / 1 "Cormorant Garamond", serif;
+  font:
+    500 clamp(52px, 6vw, 82px) / 1 "Cormorant Garamond",
+    serif;
 }
 .operations-metrics h3 {
   margin: 24px 0 12px;
   color: #fff;
-  font: 500 23px/1 "Cormorant Garamond", serif;
+  font:
+    500 23px/1 "Cormorant Garamond",
+    serif;
 }
 .operations-metrics p {
   margin: 0;
@@ -5130,7 +5202,9 @@ footer {
 .operations-next strong {
   grid-column: 1;
   margin-top: 8px;
-  font: 500 29px/1.05 "Cormorant Garamond", serif;
+  font:
+    500 29px/1.05 "Cormorant Garamond",
+    serif;
 }
 .operations-next svg {
   grid-column: 2;
@@ -5333,7 +5407,11 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(16, 24, 32, 0.82), rgba(16, 24, 32, 0.5));
+  background: linear-gradient(
+    90deg,
+    rgba(16, 24, 32, 0.82),
+    rgba(16, 24, 32, 0.5)
+  );
 }
 .exit-hero-image {
   position: absolute;
@@ -5351,7 +5429,9 @@ footer {
 .exit-hero h1 {
   max-width: 1050px;
   margin: 0;
-  font: 500 clamp(58px, 7vw, 106px) / 0.9 "Cormorant Garamond", serif;
+  font:
+    500 clamp(58px, 7vw, 106px) / 0.9 "Cormorant Garamond",
+    serif;
   letter-spacing: -0.03em;
 }
 .exit-hero-copy {
@@ -5393,7 +5473,9 @@ footer {
   max-width: 900px;
   margin: 0;
   color: var(--ink);
-  font: 500 clamp(46px, 5.2vw, 76px) / 0.93 "Cormorant Garamond", serif;
+  font:
+    500 clamp(46px, 5.2vw, 76px) / 0.93 "Cormorant Garamond",
+    serif;
   letter-spacing: -0.025em;
 }
 .exit-readiness,
@@ -5436,7 +5518,9 @@ footer {
 .exit-readiness-grid h3 {
   margin: 31px 0 8px;
   color: var(--ink);
-  font: 500 24px/1.05 "Cormorant Garamond", serif;
+  font:
+    500 24px/1.05 "Cormorant Garamond",
+    serif;
 }
 .exit-readiness-grid p {
   margin: 0;
@@ -5465,7 +5549,9 @@ footer {
   padding-left: 20px;
   color: var(--ink);
   border-left: 1px solid var(--line);
-  font: 500 31px/1 "Cormorant Garamond", serif;
+  font:
+    500 31px/1 "Cormorant Garamond",
+    serif;
 }
 .exit-operating-proof small {
   color: #77766f;
@@ -5527,7 +5613,9 @@ footer {
 }
 .exit-transaction-table strong {
   color: #fff;
-  font: 500 20px/1.15 "Cormorant Garamond", serif;
+  font:
+    500 20px/1.15 "Cormorant Garamond",
+    serif;
 }
 .exit-transaction-table small {
   display: inline-block;
@@ -5593,7 +5681,9 @@ footer {
 }
 .exit-value-bridge strong {
   color: var(--ink);
-  font: 500 clamp(44px, 5vw, 68px) / 0.9 "Cormorant Garamond", serif;
+  font:
+    500 clamp(44px, 5vw, 68px) / 0.9 "Cormorant Garamond",
+    serif;
 }
 .exit-value-bridge b {
   color: var(--copper);
@@ -5619,7 +5709,9 @@ footer {
 }
 .exit-value-measures strong {
   color: var(--ink);
-  font: 500 42px/1 "Cormorant Garamond", serif;
+  font:
+    500 42px/1 "Cormorant Garamond",
+    serif;
 }
 .exit-value-measures span {
   color: #596164;
@@ -5658,7 +5750,9 @@ footer {
 .exit-capital-structure strong,
 .exit-capital-record strong {
   color: var(--ink);
-  font: 500 48px/1 "Cormorant Garamond", serif;
+  font:
+    500 48px/1 "Cormorant Garamond",
+    serif;
 }
 .exit-capital-structure span,
 .exit-capital-record span {
@@ -5722,7 +5816,9 @@ footer {
   padding: 15px 0;
   color: rgba(255, 255, 255, 0.76);
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
-  font: 500 20px/1.1 "Cormorant Garamond", serif;
+  font:
+    500 20px/1.1 "Cormorant Garamond",
+    serif;
 }
 .exit-share-sale-grid .exit-source-limit {
   margin-top: 30px;
@@ -5760,7 +5856,9 @@ footer {
   display: block;
   margin-top: 52px;
   color: var(--sand);
-  font: 500 42px/1 "Cormorant Garamond", serif;
+  font:
+    500 42px/1 "Cormorant Garamond",
+    serif;
 }
 .exit-timing-grid > div:last-child > p {
   margin: 0 0 20px;
@@ -5777,7 +5875,9 @@ footer {
   padding: 17px 0;
   color: rgba(255, 255, 255, 0.78);
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
-  font: 500 21px/1.15 "Cormorant Garamond", serif;
+  font:
+    500 21px/1.15 "Cormorant Garamond",
+    serif;
 }
 .exit-timing-grid > div:last-child > p.exit-timing-note {
   margin-top: 30px;
@@ -5807,7 +5907,9 @@ footer {
 .exit-cycle-timeline h3 {
   margin: 35px 0 10px;
   color: var(--ink);
-  font: 500 25px/1 "Cormorant Garamond", serif;
+  font:
+    500 25px/1 "Cormorant Garamond",
+    serif;
 }
 .exit-cycle-timeline p {
   margin: 0;
@@ -5829,7 +5931,9 @@ footer {
 .exit-lessons-list h3 {
   margin: -3px 0 0;
   color: #fff;
-  font: 500 24px/1.08 "Cormorant Garamond", serif;
+  font:
+    500 24px/1.08 "Cormorant Garamond",
+    serif;
 }
 .exit-lessons-list p {
   margin: 0;
@@ -5861,7 +5965,9 @@ footer {
 }
 .exit-final-line span {
   color: var(--ink);
-  font: 500 18px/1 "Cormorant Garamond", serif;
+  font:
+    500 18px/1 "Cormorant Garamond",
+    serif;
 }
 .exit-final-line b {
   color: var(--copper);
@@ -6102,7 +6208,9 @@ footer {
 .lessons-hero h1 {
   max-width: 940px;
   margin: 0;
-  font: 500 clamp(62px, 7.4vw, 112px) / 0.88 "Cormorant Garamond", serif;
+  font:
+    500 clamp(62px, 7.4vw, 112px) / 0.88 "Cormorant Garamond",
+    serif;
   letter-spacing: -0.03em;
 }
 .lessons-hero-copy {
@@ -6144,7 +6252,9 @@ footer {
   max-width: 900px;
   margin: 0;
   color: var(--ink);
-  font: 500 clamp(46px, 5.2vw, 76px) / 0.93 "Cormorant Garamond", serif;
+  font:
+    500 clamp(46px, 5.2vw, 76px) / 0.93 "Cormorant Garamond",
+    serif;
   letter-spacing: -0.025em;
 }
 .lessons-principal,
@@ -6234,7 +6344,9 @@ footer {
 }
 .lessons-delay strong {
   color: var(--ink);
-  font: 500 40px/1 "Cormorant Garamond", serif;
+  font:
+    500 40px/1 "Cormorant Garamond",
+    serif;
 }
 .lessons-delay span {
   color: #77766f;
@@ -6314,7 +6426,9 @@ footer {
 .lessons-comparison-table strong,
 .lessons-evidence-table strong {
   color: #fff;
-  font: 500 20px/1.15 "Cormorant Garamond", serif;
+  font:
+    500 20px/1.15 "Cormorant Garamond",
+    serif;
 }
 .lessons-comparison-table p,
 .lessons-evidence-table p {
@@ -6360,7 +6474,9 @@ footer {
 .lessons-preferred-sequence h3 {
   margin: 25px 0 7px;
   color: var(--ink);
-  font: 500 23px/1 "Cormorant Garamond", serif;
+  font:
+    500 23px/1 "Cormorant Garamond",
+    serif;
 }
 .lessons-preferred-sequence article p {
   margin: 0;
@@ -6411,7 +6527,9 @@ footer {
 }
 .lessons-area-system .lessons-area-core {
   color: var(--ink);
-  font: 500 21px/1.1 "Cormorant Garamond", serif;
+  font:
+    500 21px/1.1 "Cormorant Garamond",
+    serif;
 }
 .lessons-infrastructure-intro {
   display: grid;
@@ -6433,7 +6551,9 @@ footer {
   padding-block: 20px;
   color: var(--ink);
   border-block: 1px solid var(--ink);
-  font: 500 38px/1 "Cormorant Garamond", serif;
+  font:
+    500 38px/1 "Cormorant Garamond",
+    serif;
 }
 .lessons-infrastructure-intro small {
   color: #77766f;
@@ -6478,7 +6598,9 @@ footer {
 .lessons-flow-grid h3 {
   margin: 34px 0 22px;
   color: #fff;
-  font: 500 36px/1 "Cormorant Garamond", serif;
+  font:
+    500 36px/1 "Cormorant Garamond",
+    serif;
 }
 .lessons-flow-grid p {
   margin: 0;
@@ -6543,7 +6665,9 @@ footer {
 }
 .lessons-future-mockup strong {
   color: var(--ink);
-  font: 500 23px/1 "Cormorant Garamond", serif;
+  font:
+    500 23px/1 "Cormorant Garamond",
+    serif;
 }
 .lessons-mockup-note {
   margin: 28px 0 0;
@@ -6567,7 +6691,9 @@ footer {
   padding-block: 20px;
   color: var(--ink);
   border-block: 1px solid var(--ink);
-  font: 500 20px/1.35 "Cormorant Garamond", serif;
+  font:
+    500 20px/1.35 "Cormorant Garamond",
+    serif;
 }
 .lessons-example span {
   color: var(--copper);
@@ -6601,7 +6727,9 @@ footer {
 .lessons-cost-equation strong {
   max-width: 180px;
   color: rgba(255, 255, 255, 0.76);
-  font: 500 20px/1.1 "Cormorant Garamond", serif;
+  font:
+    500 20px/1.1 "Cormorant Garamond",
+    serif;
 }
 .lessons-cost-equation b {
   position: absolute;
@@ -6674,7 +6802,9 @@ footer {
 }
 .lessons-rate-metrics strong {
   color: var(--ink);
-  font: 500 clamp(42px, 4vw, 62px) / 0.9 "Cormorant Garamond", serif;
+  font:
+    500 clamp(42px, 4vw, 62px) / 0.9 "Cormorant Garamond",
+    serif;
 }
 .lessons-rate-metrics span {
   color: #596164;
@@ -6741,7 +6871,9 @@ footer {
 }
 .lessons-overview-link strong {
   margin-top: 8px;
-  font: 500 29px/1 "Cormorant Garamond", serif;
+  font:
+    500 29px/1 "Cormorant Garamond",
+    serif;
 }
 .lessons-overview-link b {
   grid-column: 2;

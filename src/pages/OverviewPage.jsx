@@ -169,16 +169,16 @@ function OverviewPage() {
             demand was rising while much of the established hotel inventory
             remained concentrated in Colombo or required substantial renewal.
             This created an opportunity to develop a large, internationally
-            branded resort on the south coast, positioned for the country’s
-            next phase of tourism growth.
+            branded resort on the south coast, positioned for the country’s next
+            phase of tourism growth.
           </p>
           <p>
             Weligama offered a broad natural bay, direct beach frontage and a
             location capable of supporting a destination-scale resort. The
             original boutique concept expanded as the feasibility work, brand
-            requirements and operating model became clearer. The resulting
-            asset was designed at a scale intended to support operating
-            efficiency, market relevance and a credible future exit.
+            requirements and operating model became clearer. The resulting asset
+            was designed at a scale intended to support operating efficiency,
+            market relevance and a credible future exit.
           </p>
         </div>
 
@@ -227,18 +227,18 @@ function OverviewPage() {
               <span>03</span>
               <h3>Use an international operator to de-risk execution</h3>
               <p>
-                Marriott brought operating standards, distribution,
-                pre-opening systems and brand recognition to a first-time
-                greenfield hospitality development.
+                Marriott brought operating standards, distribution, pre-opening
+                systems and brand recognition to a first-time greenfield
+                hospitality development.
               </p>
             </article>
             <article>
               <span>04</span>
               <h3>Build a product with operating and exit relevance</h3>
               <p>
-                The scale, all-sea-facing room orientation and resort
-                facilities were assessed not only as design decisions, but as
-                inputs into revenue, efficiency and long-term asset value.
+                The scale, all-sea-facing room orientation and resort facilities
+                were assessed not only as design decisions, but as inputs into
+                revenue, efficiency and long-term asset value.
               </p>
             </article>
           </div>
@@ -253,8 +253,8 @@ function OverviewPage() {
           </div>
           <p>
             Responsibility was not limited to a single workstream. The mandate
-            continued as the project moved from an investment proposition into
-            a physical asset, an operating business and, ultimately, a completed
+            continued as the project moved from an investment proposition into a
+            physical asset, an operating business and, ultimately, a completed
             transaction.
           </p>
         </div>
@@ -284,9 +284,9 @@ function OverviewPage() {
               <h2>Operating performance and realised value</h2>
             </div>
             <p>
-              The project was tested twice: first as an operating hotel and
-              then as an investment asset. The figures below record the
-              stabilised trading position and the completed transaction.
+              The project was tested twice: first as an operating hotel and then
+              as an investment asset. The figures below record the stabilised
+              trading position and the completed transaction.
             </p>
           </div>
 
@@ -331,9 +331,8 @@ function OverviewPage() {
                 ))}
               </div>
               <p>
-                Hotel Properties Limited of Singapore acquired the company on
-                19 April 2019. Marriott continued as operator following the
-                sale.
+                Hotel Properties Limited of Singapore acquired the company on 19
+                April 2019. Marriott continued as operator following the sale.
               </p>
             </article>
           </div>
@@ -347,11 +346,11 @@ function OverviewPage() {
         <p className="eyebrow eyebrow-dark">THE TRACK RECORD</p>
         <h2>From an undeveloped site to a realised investment</h2>
         <p>
-          The significance of Weligama is not limited to the completed hotel.
-          It is a record of decisions made across land, product, capital,
-          design, construction, operations and transaction execution. The
-          following chapters examine those decisions in detail, including what
-          worked and what could be approached differently today.
+          The significance of Weligama is not limited to the completed hotel. It
+          is a record of decisions made across land, product, capital, design,
+          construction, operations and transaction execution. The following
+          chapters examine those decisions in detail, including what worked and
+          what could be approached differently today.
         </p>
         <div className="overview-close-actions">
           <Link className="button button-dark" to="/opportunity">

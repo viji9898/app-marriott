@@ -33,14 +33,38 @@ const productComparison = [
 ];
 
 const siteCriteria = [
-  ["Direct beachfront", "The ocean needed to form part of the core guest experience."],
-  ["Uninterrupted views", "The site had to support sea views from every guest room."],
-  ["Sufficient frontage", "Wide frontage was required for a single-loaded room configuration."],
-  ["Development capacity", "The land needed to accommodate rooms, public areas, recreation and servicing."],
-  ["Accessible beach", "Visual appeal alone was insufficient without practical access to the water."],
-  ["Improving connectivity", "Travel time from Colombo needed a credible path to improvement."],
-  ["Freehold ownership", "Control of the land was important for financing and long-term value."],
-  ["Expansion potential", "The site needed to support a project larger than the original boutique concept."],
+  [
+    "Direct beachfront",
+    "The ocean needed to form part of the core guest experience.",
+  ],
+  [
+    "Uninterrupted views",
+    "The site had to support sea views from every guest room.",
+  ],
+  [
+    "Sufficient frontage",
+    "Wide frontage was required for a single-loaded room configuration.",
+  ],
+  [
+    "Development capacity",
+    "The land needed to accommodate rooms, public areas, recreation and servicing.",
+  ],
+  [
+    "Accessible beach",
+    "Visual appeal alone was insufficient without practical access to the water.",
+  ],
+  [
+    "Improving connectivity",
+    "Travel time from Colombo needed a credible path to improvement.",
+  ],
+  [
+    "Freehold ownership",
+    "Control of the land was important for financing and long-term value.",
+  ],
+  [
+    "Expansion potential",
+    "The site needed to support a project larger than the original boutique concept.",
+  ],
 ];
 
 const convictions = [
@@ -132,10 +156,10 @@ function OpportunityPage() {
         />
         <div className="opportunity-section-copy">
           <p>
-            The end of the civil war materially changed the country’s
-            investment outlook. Airlines increased capacity, visitor demand
-            grew and established hotels began achieving stronger occupancy and
-            room rates.
+            The end of the civil war materially changed the country’s investment
+            outlook. Airlines increased capacity, visitor demand grew and
+            established hotels began achieving stronger occupancy and room
+            rates.
           </p>
           <p>
             Supply had not yet adjusted. Much of the available inventory had
@@ -175,11 +199,11 @@ function OpportunityPage() {
               existing hotel or develop a new asset.
             </p>
             <p>
-              Existing properties carried structural limitations: smaller
-              rooms, inefficient layouts, ageing infrastructure and design
-              standards that were difficult to correct through refurbishment
-              alone. Renovation could require substantial capital without
-              producing a genuinely competitive product.
+              Existing properties carried structural limitations: smaller rooms,
+              inefficient layouts, ageing infrastructure and design standards
+              that were difficult to correct through refurbishment alone.
+              Renovation could require substantial capital without producing a
+              genuinely competitive product.
             </p>
           </div>
           <div className="opportunity-comparison">
@@ -222,8 +246,8 @@ function OpportunityPage() {
           </p>
           <p className="opportunity-lead">
             The objective was not simply to find beachfront land. The site
-            needed to support a resort of sufficient quality and scale to
-            become a rate leader within its market.
+            needed to support a resort of sufficient quality and scale to become
+            a rate leader within its market.
           </p>
         </div>
       </section>
@@ -289,10 +313,10 @@ function OpportunityPage() {
               international operator.
             </p>
             <p>
-              This reversed the conventional sequence in which a developer
-              first obtains preliminary brand interest and then completes the
-              land acquisition. It introduced risk, but it also preserved
-              control over a site considered difficult to replicate.
+              This reversed the conventional sequence in which a developer first
+              obtains preliminary brand interest and then completes the land
+              acquisition. It introduced risk, but it also preserved control
+              over a site considered difficult to replicate.
             </p>
           </div>
           <div className="opportunity-convictions">
@@ -320,8 +344,8 @@ function OpportunityPage() {
         />
         <p className="opportunity-scale-intro">
           The original concept was a boutique resort of approximately 50–60
-          rooms. As feasibility, operating efficiency and the potential value
-          of the site were examined, the project increased in scale.
+          rooms. As feasibility, operating efficiency and the potential value of
+          the site were examined, the project increased in scale.
         </p>
         <div className="opportunity-scale-timeline">
           {scaleEvolution.map(([value, unit, description]) => (

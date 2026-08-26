@@ -234,8 +234,8 @@ function DevelopmentTimeline() {
           <p className="eyebrow eyebrow-dark">THE COMPLETE DEVELOPMENT CYCLE</p>
           <h2>From greenfield site to institutional exit</h2>
           <p>
-            A first-person account of delivering a complex beachfront resort
-            in an emerging market, from identifying the right opportunity to
+            A first-person account of delivering a complex beachfront resort in
+            an emerging market, from identifying the right opportunity to
             achieving a successful institutional exit.
           </p>
         </div>
