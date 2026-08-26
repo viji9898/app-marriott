@@ -1,0 +1,804 @@
+:root {
+  --ink: #101820;
+  --ivory: #f4f0e8;
+  --paper: #faf9f6;
+  --sand: #c8b79e;
+  --copper: #b76e45;
+  --slate: #25364a;
+  --body: #18212a;
+  --line: rgba(16, 24, 32, 0.17);
+  --max: 1320px;
+}
+.page-width {
+  width: min(var(--max), calc(100% - 96px));
+  margin-inline: auto;
+}
+.site-header {
+  position: fixed;
+  z-index: 10;
+  inset: 0 0 auto;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+.site-header.is-scrolled {
+  background: var(--ink);
+}
+.header-inner {
+  width: min(var(--max), calc(100% - 96px));
+  height: 82px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wordmark,
+.footer-title {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  font-weight: 600;
+}
+.wordmark span {
+  color: var(--copper);
+  padding: 0 5px;
+}
+.desktop-nav {
+  display: flex;
+  gap: 26px;
+}
+.desktop-nav a,
+.mobile-nav a {
+  font-size: 11px;
+  letter-spacing: 0.07em;
+  text-decoration: none;
+  color: inherit;
+}
+.desktop-nav a:hover,
+.mobile-nav a:hover {
+  color: var(--sand);
+}
+.menu-toggle {
+  display: none;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 10px;
+}
+.menu-toggle svg {
+  display: block;
+}
+.mobile-nav {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  background: var(--ink);
+  padding: 14px 48px 22px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+}
+.mobile-nav a {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+.hero {
+  min-height: 86vh;
+  position: relative;
+  background: var(--slate);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.hero-image {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(16, 24, 32, 0.92) 0%,
+      rgba(16, 24, 32, 0.67) 48%,
+      rgba(16, 24, 32, 0.45)
+    ),
+    url("/images/weligama-marriott-hero.jpg") center/cover;
+}
+.hero-content {
+  position: relative;
+  padding-top: 70px;
+}
+.eyebrow {
+  margin: 0 0 22px;
+  font-size: 10px;
+  letter-spacing: 0.17em;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--sand);
+}
+.eyebrow span {
+  margin: 0 7px;
+  color: var(--copper);
+}
+.eyebrow-dark {
+  color: var(--copper);
+}
+.hero h1,
+.outcome h2,
+.decision h2,
+.placeholder h1 {
+  font:
+    500 clamp(60px, 8vw, 122px)/0.82 "Cormorant Garamond",
+    serif;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+.hero h1 em {
+  color: var(--sand);
+  font-style: italic;
+}
+.hero-title {
+  margin: 36px 0 12px;
+  font:
+    500 clamp(24px, 3vw, 39px)/1.1 "Cormorant Garamond",
+    serif;
+}
+.hero-intro {
+  max-width: 520px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.76);
+}
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 35px;
+}
+.button {
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 18px;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.button-copper {
+  background: var(--copper);
+  color: #fff;
+}
+.button-ghost {
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  color: #fff;
+}
+.button:hover {
+  transform: translateY(-2px);
+}
+.scroll-cue {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.scroll-cue span {
+  width: 1px;
+  height: 42px;
+  background: var(--copper);
+}
+.facts-band {
+  background: var(--ink);
+  color: #fff;
+}
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fact {
+  padding: 34px 28px;
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+.fact:first-child {
+  padding-left: 0;
+}
+.fact:last-child {
+  border: 0;
+}
+.fact strong {
+  display: block;
+  font:
+    500 43px/1 "Cormorant Garamond",
+    serif;
+  color: var(--sand);
+}
+.fact span {
+  display: block;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 10px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+.intro,
+.timeline-section,
+.chapters,
+.lessons,
+.library {
+  padding-block: 120px;
+}
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px 10%;
+  position: relative;
+}
+.intro h2,
+.section-heading h2,
+.split-heading h2 {
+  font:
+    500 clamp(45px, 5vw, 75px)/0.9 "Cormorant Garamond",
+    serif;
+  margin: 0;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.intro-copy {
+  padding-top: 34px;
+  max-width: 570px;
+}
+.intro-copy p,
+.section-heading > p,
+.split-heading > p,
+.decision-copy,
+.outcome-grid > div > p:last-child,
+.placeholder-intro {
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0 0 20px;
+}
+.summary {
+  grid-column: 2;
+  border-top: 1px solid var(--ink);
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.summary div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 15px 10px 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+.summary div:nth-child(odd) {
+  margin-right: 20px;
+}
+.summary span {
+  color: #7a7b77;
+  font-size: 9px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+.summary b {
+  font-size: 12px;
+  font-weight: 500;
+}
+.timeline-section {
+  background: var(--ivory);
+  width: 100%;
+}
+.section-heading {
+  max-width: 680px;
+}
+.section-heading > p {
+  margin-top: 28px;
+  max-width: 560px;
+}
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 74px;
+  border-top: 1px solid var(--line);
+}
+.stage {
+  position: relative;
+  padding: 33px 10px 0 0;
+}
+.stage:not(:last-child):after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: 0;
+  width: 1px;
+  height: 16px;
+  background: var(--copper);
+}
+.stage-icon {
+  color: var(--copper);
+  margin-bottom: 32px;
+}
+.stage > span {
+  display: block;
+  color: #8b8173;
+  font-size: 10px;
+  margin-bottom: 9px;
+}
+.stage b {
+  font-size: 12px;
+  font-weight: 500;
+}
+.split-heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+  align-items: end;
+}
+.split-heading > p {
+  max-width: 430px;
+  margin: 0 0 5px;
+}
+.chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--line);
+  margin-top: 65px;
+}
+.chapter {
+  background: var(--paper);
+  min-height: 276px;
+  padding: 25px 26px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.2s ease;
+}
+.chapter:hover {
+  background: var(--ivory);
+}
+.chapter-top {
+  display: flex;
+  justify-content: space-between;
+  color: var(--copper);
+}
+.chapter-top span {
+  font-size: 10px;
+  color: #888;
+}
+.chapter h3,
+.lesson-grid h3 {
+  font:
+    500 31px/1 "Cormorant Garamond",
+    serif;
+  margin: 45px 0 10px;
+  color: var(--ink);
+}
+.chapter p {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #5e6260;
+  margin: 0;
+}
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--copper);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.chapter .text-link {
+  margin-top: auto;
+  padding-top: 22px;
+}
+.decision {
+  background: var(--slate);
+  color: #fff;
+  padding: 115px 0 100px;
+}
+.decision h2 {
+  color: #fff;
+  font-size: clamp(48px, 6vw, 86px);
+}
+.decision-copy {
+  max-width: 590px;
+  color: rgba(255, 255, 255, 0.68);
+  margin-top: 32px;
+}
+.flow {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 22px;
+  margin-top: 70px;
+}
+.flow-item {
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  padding-top: 18px;
+}
+.flow-item span {
+  display: block;
+  font-size: 10px;
+  color: var(--sand);
+  margin-bottom: 24px;
+}
+.flow-item b {
+  font:
+    500 22px/1.05 "Cormorant Garamond",
+    serif;
+  display: block;
+  max-width: 120px;
+}
+.flow-item svg {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  color: var(--copper);
+}
+.lessons {
+  background: var(--paper);
+}
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7%;
+  margin: 64px 0 42px;
+}
+.lesson-grid article {
+  border-top: 1px solid var(--ink);
+  padding-top: 18px;
+}
+.lesson-grid article > span {
+  font-size: 10px;
+  color: var(--copper);
+}
+.lesson-grid h3 {
+  margin: 38px 0 15px;
+}
+.lesson-grid p {
+  font-size: 13px;
+  line-height: 1.75;
+  color: #59605e;
+}
+.outcome {
+  background: var(--ivory);
+  padding: 115px 0;
+}
+.outcome-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 12%;
+}
+.outcome h2 {
+  color: var(--ink);
+  font-size: clamp(52px, 6vw, 88px);
+  margin-bottom: 38px;
+}
+.outcome-grid > div > p:last-child {
+  max-width: 455px;
+  color: #59605e;
+}
+.metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--ink);
+}
+.metrics div {
+  padding: 18px 10px 17px 0;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.metrics span {
+  font-size: 10px;
+  color: #77766f;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+.metrics b {
+  font:
+    500 25px/1 "Cormorant Garamond",
+    serif;
+  color: var(--ink);
+}
+.library {
+  background: var(--paper);
+}
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line);
+  margin-top: 63px;
+}
+.library-grid div {
+  min-height: 145px;
+  padding: 23px 18px 15px 0;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.library-grid svg {
+  color: var(--copper);
+}
+.library-grid b {
+  font:
+    500 25px/1 "Cormorant Garamond",
+    serif;
+}
+.library-grid span {
+  font-size: 10px;
+  color: #8a8379;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+footer {
+  background: var(--ink);
+  color: #fff;
+  padding-top: 75px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 20%;
+  padding-bottom: 70px;
+}
+.footer-title {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.footer-grid p {
+  max-width: 370px;
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 12px;
+  line-height: 1.7;
+  margin-top: 25px;
+}
+.footer-grid nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  gap: 18px;
+}
+.footer-grid nav a,
+.footer-grid nav span {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 11px;
+  text-decoration: none;
+}
+.footer-grid nav a:hover {
+  color: var(--sand);
+}
+.copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.17);
+  padding-block: 20px;
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+}
+.placeholder {
+  min-height: 70vh;
+  padding-top: 190px;
+  padding-bottom: 120px;
+}
+.placeholder h1 {
+  font-size: clamp(70px, 10vw, 140px);
+  color: var(--ink);
+  margin-bottom: 34px;
+}
+.placeholder-intro {
+  max-width: 520px;
+}
+.placeholder-note {
+  max-width: 620px;
+  border-block: 1px solid var(--line);
+  padding: 30px 0;
+  margin: 65px 0 30px;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  column-gap: 15px;
+}
+.placeholder-note svg {
+  color: var(--copper);
+}
+.placeholder-note p {
+  font:
+    500 28px/1 "Cormorant Garamond",
+    serif;
+  margin: 0;
+}
+.placeholder-note span {
+  grid-column: 2;
+  color: #747770;
+  font-size: 12px;
+  margin-top: 9px;
+}
+@media (max-width: 960px) {
+  .page-width,
+  .header-inner {
+    width: min(100% - 48px, var(--max));
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .intro,
+  .outcome-grid {
+    gap: 40px;
+  }
+  .chapter-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .flow {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px 22px;
+  }
+  .flow-item:nth-child(3) svg,
+  .flow-item:nth-child(6) svg {
+    display: none;
+  }
+}
+@media (max-width: 620px) {
+  .page-width,
+  .header-inner {
+    width: calc(100% - 36px);
+  }
+  .header-inner {
+    height: 70px;
+  }
+  .wordmark {
+    font-size: 9px;
+  }
+  .mobile-nav {
+    padding-inline: 18px;
+  }
+  .hero {
+    min-height: 760px;
+    align-items: flex-end;
+    padding-bottom: 90px;
+  }
+  .hero h1 {
+    font-size: 68px;
+  }
+  .hero-title {
+    margin-top: 28px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .facts-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .fact,
+  .fact:first-child {
+    padding: 25px 12px 25px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  .fact strong {
+    font-size: 35px;
+  }
+  .intro,
+  .split-heading,
+  .outcome-grid {
+    display: block;
+  }
+  .intro-copy {
+    padding-top: 35px;
+  }
+  .summary {
+    grid-column: auto;
+    margin-top: 45px;
+  }
+  .intro,
+  .timeline-section,
+  .chapters,
+  .lessons,
+  .library {
+    padding-block: 78px;
+  }
+  .timeline {
+    display: block;
+    margin-top: 45px;
+    border-left: 1px solid var(--line);
+    border-top: 0;
+    margin-left: 3px;
+  }
+  .stage {
+    padding: 0 0 30px 35px;
+  }
+  .stage:not(:last-child):after {
+    left: -1px;
+    top: 0;
+    right: auto;
+    width: 16px;
+    height: 1px;
+  }
+  .stage-icon {
+    margin-bottom: 12px;
+  }
+  .chapter-grid {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+  .chapter {
+    min-height: 230px;
+  }
+  .chapter h3 {
+    margin-top: 35px;
+  }
+  .decision {
+    padding: 78px 0;
+  }
+  .decision h2 {
+    font-size: 54px;
+  }
+  .flow {
+    display: block;
+    margin-top: 45px;
+  }
+  .flow-item {
+    padding: 14px 0 22px 42px;
+    border-top: 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.35);
+  }
+  .flow-item span {
+    margin-bottom: 7px;
+  }
+  .flow-item b {
+    max-width: none;
+  }
+  .flow-item svg {
+    top: 42px;
+    right: auto;
+    left: -9px;
+    transform: rotate(90deg);
+  }
+  .lesson-grid,
+  .library-grid {
+    display: block;
+    margin-top: 42px;
+  }
+  .lesson-grid article {
+    margin-bottom: 40px;
+  }
+  .library-grid div {
+    min-height: 125px;
+  }
+  .footer-grid {
+    display: block;
+    padding-bottom: 45px;
+  }
+  .footer-grid nav {
+    margin-top: 45px;
+  }
+  .placeholder {
+    padding-top: 140px;
+  }
+  .placeholder h1 {
+    font-size: 76px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .site-header,
+  .button,
+  .chapter {
+    transition: none;
+  }
+}
