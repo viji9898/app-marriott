@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import {
   BrowserRouter,
   Link,
+  Navigate,
   Route,
   Routes,
   useLocation,
@@ -34,6 +35,7 @@ import {
   outcomes,
   pageData,
 } from "./data/projectData";
+import { PROJECT_PARTNER_CATEGORIES } from "./data/projectPartners";
 import OverviewPage from "./pages/OverviewPage";
 import OpportunityPage from "./pages/OpportunityPage";
 import DevelopmentPage from "./pages/DevelopmentPage";
@@ -43,6 +45,7 @@ import OperationsPage from "./pages/OperationsPage";
 import ExitPage from "./pages/ExitPage";
 import LessonsPage from "./pages/LessonsPage";
 import LibraryPage from "./pages/LibraryPage";
+import ProjectPartnersPage from "./pages/ProjectPartnersPage";
 import "./App.css";
 
 const siteUrl = "https://marriott.viji.com";
@@ -110,6 +113,12 @@ const routeSeo = {
       "A curated archive of the reports, drawings, approvals, financial records and operating evidence behind the Marriott Weligama development.",
     label: "Project Library",
   },
+  "/project-partners": {
+    title: "Project Partners | Weligama Bay Marriott Development Record",
+    description:
+      "The financial institutions, advisors, designers, consultants and contractors behind the Weligama Bay Marriott development.",
+    label: "Project Partners",
+  },
 };
 
 const stages = [
@@ -120,16 +129,6 @@ const stages = [
   ["05", "Construct", HardHat],
   ["06", "Operate", Activity],
   ["07", "Exit", LogOut],
-];
-
-const projectTeam = [
-  ["Marriott International", "Hotel Brand & Operator"],
-  ["Belt Collins", "Landscape Architecture"],
-  ["Wilson Associates", "Interior Design"],
-  ["East West Engineering", "Main Contractor"],
-  ["Shin Nippon", "Plumbing Contractor"],
-  ["Access Engineering", "HVAC Contractor"],
-  ["Fentons", "Electrical & ELV Contractor"],
 ];
 
 function RouteSeo() {
@@ -540,36 +539,27 @@ function OutcomeMetrics() {
   );
 }
 function ProjectTeam() {
-  const [expanded, setExpanded] = useState(false);
-  const visibleTeam = expanded ? projectTeam : projectTeam.slice(0, 4);
-
   return (
     <section className="project-team">
       <div className="page-width">
         <div className="project-team-heading">
-          <p className="eyebrow eyebrow-dark">THE PROJECT TEAM</p>
+          <p className="eyebrow eyebrow-dark">THE PROJECT PARTNERS</p>
           <p>
-            Specialist consultants and contractors appointed to design, deliver
-            and operate the resort.
+            Financial institutions, advisors, consultants and contractors
+            appointed across the development lifecycle.
           </p>
         </div>
-        <div className="project-team-grid" id="project-team-list">
-          {visibleTeam.map(([organisation, role]) => (
-            <article key={organisation}>
-              <h3>{organisation}</h3>
-              <p>{role}</p>
-            </article>
+        <div className="project-team-grid">
+          {PROJECT_PARTNER_CATEGORIES.map(({ number, category }) => (
+            <div key={category}>
+              <span>{number}</span>
+              <h3>{category}</h3>
+            </div>
           ))}
         </div>
-        <button
-          className="project-team-toggle"
-          type="button"
-          aria-expanded={expanded}
-          aria-controls="project-team-list"
-          onClick={() => setExpanded((current) => !current)}
-        >
-          {expanded ? "Show less" : "View more"}
-        </button>
+        <Link className="project-team-link" to="/project-partners">
+          View the full project directory <span aria-hidden="true">→</span>
+        </Link>
       </div>
     </section>
   );
@@ -624,6 +614,7 @@ function Footer() {
           <Link to="/development">Development Guide</Link>
           <Link to="/lessons">Lessons</Link>
           <Link to="/library">Project Library</Link>
+          <Link to="/project-partners">Project Partners</Link>
         </nav>
       </div>
       <div className="page-width copyright">
@@ -689,6 +680,16 @@ function App() {
         <Route path="/exit" element={<ExitPage />} />
         <Route path="/lessons" element={<LessonsPage />} />
         <Route path="/library" element={<LibraryPage />} />
+        <Route
+          caseSensitive
+          path="/project-partners"
+          element={<ProjectPartnersPage />}
+        />
+        <Route
+          caseSensitive
+          path="/PROJECT-PARTNERS"
+          element={<Navigate replace to="/project-partners" />}
+        />
         {Object.entries(pageData).map(([path, [section, title, intro]]) => (
           <Route
             key={path}
