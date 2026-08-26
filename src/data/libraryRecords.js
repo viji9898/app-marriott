@@ -27,12 +27,34 @@ export const LIBRARY_RECORDS = [
     pages: 2,
     evidenceStatus: "Reported",
     access: "Public",
-    featured: true,
+    featured: false,
     fileUrl: null,
     thumbnail: null,
     relatedRoutes: ["/overview", "/development", "/operations", "/exit"],
     notes:
       "Selected transaction figures are presented as reported in the project record. The reported per-key value and return on investment require reconciliation against detailed transaction and equity cash-flow schedules.",
+  },
+  {
+    id: "MW-FEA-001",
+    slug: "hvs-marriott-feasibility-study-and-valuation-report",
+    title: "HVS Marriott Feasibility Study and Valuation Report",
+    shortTitle: "HVS Feasibility Study",
+    description:
+      "An independent HVS market research, feasibility and valuation report prepared for the proposed Marriott resort development.",
+    phase: "Feasibility",
+    type: "Feasibility Study",
+    format: "PDF",
+    date: "27 January 2012",
+    pages: 118,
+    evidenceStatus: "Contemporaneous record",
+    access: "Public",
+    featured: true,
+    fileUrl:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-marriott-case-study/hvs/2012-01-27+HVS-Marriott+Feasibility+STudy+and+Valuation+Report.pdf",
+    thumbnail: null,
+    relatedRoutes: ["/opportunity", "/development"],
+    notes:
+      "The report records the independent market and feasibility analysis used to assess the proposed hotel development and its valuation context.",
   },
   {
     id: "MW-CORE-002",
