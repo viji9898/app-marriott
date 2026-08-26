@@ -651,6 +651,36 @@ footer {
     display: none;
   }
 }
+@media (max-width: 800px) {
+  .hero {
+    min-height: 640px;
+  }
+  .hero-content {
+    padding-top: 78px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .facts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fact,
+  .fact:first-child {
+    padding: 22px 18px 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  .fact:nth-child(2) {
+    border-right: 0;
+  }
+  .fact strong {
+    font-size: 36px;
+  }
+  .timeline-section .section-heading h2 {
+    font-size: 40px;
+  }
+}
 @media (max-width: 620px) {
   .page-width,
   .header-inner {
@@ -801,5 +831,225 @@ footer {
   .button,
   .chapter {
     transition: none;
+  }
+}
+
+/* Compact report landing page */
+.site-header .header-inner {
+  height: 56px;
+}
+.hero {
+  min-height: 52vh;
+}
+.hero-content {
+  padding-top: 48px;
+}
+.hero h1 {
+  font-size: clamp(54px, 7vw, 94px);
+}
+.hero-title {
+  margin: 24px 0 10px;
+}
+.hero-actions {
+  margin-top: 24px;
+}
+.scroll-cue {
+  bottom: 20px;
+}
+.facts-grid {
+  min-height: 76px;
+}
+.fact {
+  padding-block: 16px;
+}
+.fact strong {
+  font-size: 34px;
+}
+.fact span {
+  margin-top: 5px;
+}
+.timeline-section {
+  padding: 18px 0 20px;
+}
+.timeline-section .page-width {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.72fr) 2fr;
+  gap: 5%;
+  align-items: center;
+}
+.timeline-section .section-heading {
+  max-width: none;
+}
+.timeline-section .section-heading h2 {
+  font-size: clamp(30px, 3vw, 44px);
+}
+.timeline-section .section-heading > p {
+  font-size: 10px;
+  line-height: 1.5;
+  margin-top: 14px;
+}
+.timeline {
+  margin-top: 0;
+  align-self: center;
+}
+.stage {
+  padding: 18px 4px 0 0;
+  text-align: center;
+}
+.stage:not(:last-child)::after {
+  display: none;
+}
+.stage-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  margin: -39px auto 9px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--sand);
+  position: relative;
+}
+.stage > span {
+  margin-bottom: 3px;
+  color: var(--copper);
+}
+.stage b {
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.chapters {
+  padding: 0 0 14px;
+}
+.chapters .section-heading {
+  display: none;
+}
+.chapter-grid {
+  grid-template-columns: repeat(8, 1fr);
+  margin-top: 0;
+}
+.chapter {
+  min-height: 116px;
+  padding: 12px 12px 10px;
+  text-align: center;
+}
+.chapter-top {
+  align-items: center;
+}
+.chapter-top svg {
+  width: 26px;
+  height: 26px;
+  margin: 8px auto 0;
+  order: 2;
+  color: var(--slate);
+}
+.chapter-top span {
+  position: absolute;
+}
+.chapter h3 {
+  margin: 10px 0 0;
+  font-size: 15px;
+  line-height: 1.05;
+}
+.chapter p,
+.chapter .text-link {
+  display: none;
+}
+.outcome {
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+}
+.outcome-grid {
+  grid-template-columns: 190px 1fr;
+  gap: 5%;
+  align-items: center;
+}
+.outcome h2 {
+  font-size: 15px;
+  line-height: 1.1;
+  margin: 0 0 9px;
+  font-family: "Cormorant Garamond", serif;
+}
+.outcome-grid > div > p:last-child {
+  font-size: 9px;
+  line-height: 1.45;
+  margin: 0;
+}
+.metrics {
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 0;
+}
+.metrics div {
+  padding: 7px 12px;
+  border-left: 1px solid var(--line);
+  border-bottom: 0;
+}
+.metrics span {
+  font-size: 7px;
+}
+.metrics b {
+  font-size: 22px;
+}
+@media (max-width: 960px) {
+  .timeline-section .page-width {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .timeline-section .section-heading {
+    max-width: 560px;
+  }
+  .chapter-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 620px) {
+  .site-header .header-inner {
+    height: 64px;
+  }
+  .hero {
+    min-height: 650px;
+  }
+  .hero-content {
+    padding-top: 70px;
+  }
+  .facts-grid {
+    min-height: 0;
+  }
+  .timeline-section {
+    padding-block: 30px;
+  }
+  .timeline-section .section-heading h2 {
+    font-size: 42px;
+  }
+  .timeline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 4px;
+    border-top: 0;
+  }
+  .stage {
+    padding-top: 18px;
+  }
+  .stage-icon {
+    margin: 0 auto 9px;
+  }
+  .chapter-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .chapter {
+    min-height: 105px;
+  }
+  .outcome-grid {
+    display: block;
+  }
+  .outcome-grid > div:first-child {
+    margin-bottom: 20px;
+  }
+  .metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+  .metrics div {
+    border-bottom: 1px solid var(--line);
   }
 }

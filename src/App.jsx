@@ -198,12 +198,12 @@ function DevelopmentTimeline() {
     <section id="development-cycle" className="timeline-section">
       <div className="page-width">
         <div className="section-heading">
-          <p className="eyebrow eyebrow-dark">THE METHOD</p>
-          <h2>The complete development cycle</h2>
+          <p className="eyebrow eyebrow-dark">THE COMPLETE DEVELOPMENT CYCLE</p>
+          <h2>From greenfield site to institutional exit</h2>
           <p>
-            The project is presented as a practical guide to hotel development,
-            with each phase combining the decisions made, the constraints
-            encountered, the commercial outcome and the lessons learned.
+            A first-person account of delivering a complex beachfront resort
+            in an emerging market, from identifying the right opportunity to
+            achieving a successful institutional exit.
           </p>
         </div>
         <div className="timeline">
@@ -249,7 +249,7 @@ function ChapterGrid() {
         </p>
       </div>
       <div className="chapter-grid">
-        {chapters.map(([number, title, description, path], index) => {
+        {chapters.map(([number, title, _description, path], index) => {
           const Icon = icons[index];
           return (
             <Link className="chapter" to={path} key={title}>
@@ -258,10 +258,6 @@ function ChapterGrid() {
                 <Icon size={22} strokeWidth={1.3} />
               </div>
               <h3>{title}</h3>
-              <p>{description}</p>
-              <span className="text-link">
-                Explore section <ArrowRight size={14} />
-              </span>
             </Link>
           );
         })}
@@ -331,8 +327,8 @@ function OutcomeMetrics() {
     <section className="outcome">
       <div className="page-width outcome-grid">
         <div>
-          <p className="eyebrow">THE OUTCOME</p>
-          <h2>A completed development and realised exit</h2>
+          <p className="eyebrow eyebrow-dark">PROJECT RESULTS</p>
+          <h2>Delivered on vision and business plan</h2>
           <p>
             Marriott International remained as operator following the share sale
             to Hotel Properties Limited. The transaction completed the full
@@ -414,13 +410,17 @@ function HomePage() {
     <>
       <Hero />
       <ProjectFacts />
-      <SectionIntro />
       <DevelopmentTimeline />
       <ChapterGrid />
-      <DecisionFlow />
-      <LessonsPreview />
       <OutcomeMetrics />
-      <LibraryPreview />
+      {window.location.hash === "#extended" && (
+        <>
+          <SectionIntro />
+          <DecisionFlow />
+          <LessonsPreview />
+          <LibraryPreview />
+        </>
+      )}
     </>
   );
 }

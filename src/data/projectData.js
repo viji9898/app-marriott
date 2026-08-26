@@ -92,7 +92,7 @@ export const outcomes = [
   ["Stabilised GOP margin", "38%"],
   ["Exit date", "19 April 2019"],
   ["Enterprise value", "USD 57 million"],
-  ["Value per key", "approximately USD 287,000"],
+  ["Value per key", "USD 287,000"],
 ];
 export const libraryItems = [
   "Plans & Drawings",
