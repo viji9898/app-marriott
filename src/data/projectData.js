@@ -18,7 +18,7 @@ export const chapters = [
   [
     "01",
     "Opportunity",
-    "Why Sri Lanka, why the south coast and why Weligama.",
+    "Why Sri Lanka, the south coast and Weligama.",
     "/opportunity",
   ],
   [
@@ -60,7 +60,7 @@ export const chapters = [
   [
     "08",
     "Lessons",
-    "What worked, what did not and what I would do differently.",
+    "What worked, what did not and what could be done differently.",
     "/lessons",
   ],
 ];
@@ -141,6 +141,6 @@ export const pageData = {
   "/lessons": [
     "07 / LESSONS",
     "Lessons",
-    "What worked, what did not and what I would do differently.",
+    "What worked, what did not and what could be done differently.",
   ],
 };

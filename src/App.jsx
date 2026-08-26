@@ -103,8 +103,8 @@ function Hero() {
         </h1>
         <p className="hero-title">Weligama Bay Marriott Resort &amp; Spa</p>
         <p className="hero-intro">
-          How I originated, financed, built, operated and exited a 198-key
-          internationally branded resort in Sri Lanka.
+          The origination, financing, construction, operation and exit of a
+          198-key internationally branded resort in Sri Lanka.
         </p>
         <div className="hero-actions">
           <a className="button button-copper" href="#development-cycle">
@@ -148,14 +148,14 @@ function SectionIntro() {
       </div>
       <div className="intro-copy">
         <p>
-          I conceived the project following the end of Sri Lanka’s civil war,
+            The project was conceived following the end of Sri Lanka’s civil war,
           when tourism demand was accelerating but internationally branded
           resort supply remained limited outside Colombo.
         </p>
         <p>
           The development evolved through several feasibility iterations before
-          becoming a 198-key Marriott resort. I led the project through site
-          acquisition, feasibility, brand engagement, capital structuring,
+          becoming a 198-key Marriott resort. The project progressed through
+          site acquisition, feasibility, brand engagement, capital structuring,
           consultant selection, construction oversight, opening, stabilisation
           and eventual exit.
         </p>
@@ -203,7 +203,7 @@ function DevelopmentTimeline() {
           <p>
             The project is presented as a practical guide to hotel development,
             with each phase combining the decisions made, the constraints
-            encountered, the commercial outcome and what I learned.
+            encountered, the commercial outcome and the lessons learned.
           </p>
         </div>
         <div className="timeline">
@@ -280,9 +280,9 @@ function DecisionFlow() {
           of connected decisions
         </h2>
         <p className="decision-copy">
-          Room count, brand standards, area efficiency, construction cost,
-          operating performance and exit value cannot be considered
-          independently. Each decision changes the economics and operational
+          Room count, brand standards, area efficiency,
+          construction cost, operating performance and exit value
+          cannot be considered independently. Each decision changes the economics and operational
           capability of the completed asset.
         </p>
         <div className="flow">

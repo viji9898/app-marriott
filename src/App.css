@@ -100,7 +100,7 @@
       rgba(16, 24, 32, 0.67) 48%,
       rgba(16, 24, 32, 0.45)
     ),
-    url("/images/weligama-marriott-hero.jpg") center/cover;
+    url("https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-marriott-case-study/hero-weligama-bay-marriott-view-for-balcony.webp") center/cover;
 }
 .hero-content {
   position: relative;
