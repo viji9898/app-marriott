@@ -137,10 +137,11 @@ export const LIBRARY_RECORDS = [
     pages: 90,
     evidenceStatus: "Contemporaneous record",
     access: "Public",
-    featured: false,
+    featured: true,
     fileUrl:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-marriott-case-study/private-equity-im-lsl/2014+05+13+IM+WHP+Marriott+edited+-+Updated.pdf",
-    thumbnail: null,
+    thumbnail:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-marriott-case-study/private-equity-im-lsl/thumbnail-im-cover.webp",
     relatedRoutes: ["/overview", "/development"],
     notes:
       "The proposed capital raise comprised the issue of up to 195,000,000 ordinary voting shares at LKR 9.00 per share, representing aggregate proceeds of up to LKR 1.755 billion.",
@@ -159,7 +160,7 @@ export const LIBRARY_RECORDS = [
     pages: null,
     evidenceStatus: "Retrospective",
     access: "Restricted",
-    featured: true,
+    featured: false,
     fileUrl: null,
     thumbnail: null,
     relatedRoutes: [
