@@ -57,16 +57,12 @@ function LibraryHero() {
             and operating evidence supporting the Marriott Weligama project history.
           </p>
         </div>
-        <div className="library-archive-composition" aria-hidden="true">
-          <span className="library-sheet sheet-back" />
-          <span className="library-sheet sheet-middle" />
-          <span className="library-sheet sheet-front">
-            <i className="library-drawing-title" />
-            <i className="library-drawing-plan" />
-            <i className="library-drawing-elevation" />
-            <b>PROJECT RECORD / INDEX</b>
-          </span>
-          <span className="library-reference-mark">MW / ARCHIVE</span>
+        <div className="library-archive-composition">
+          <img
+            className="library-hero-image"
+            src="https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-marriott-case-study/hero-project-libary-marriott-road-building-view.webp"
+            alt="Road and building view at the Marriott Weligama development"
+          />
         </div>
       </div>
     </section>
@@ -130,15 +126,6 @@ function FeaturedRecord({ record }) {
 function LibraryFilters({ filters, options, onChange, onReset, hasFilters }) {
   return (
     <div className="library-filters" role="search" aria-label="Filter archive records">
-      <label className="library-search-field">
-        <span>Search the archive</span>
-        <input
-          type="search"
-          value={filters.search}
-          onChange={(event) => onChange("search", event.target.value)}
-          placeholder="Title, reference, phase or format"
-        />
-      </label>
       <label>
         <span>Project phase</span>
         <select value={filters.phase} onChange={(event) => onChange("phase", event.target.value)}>
@@ -156,6 +143,15 @@ function LibraryFilters({ filters, options, onChange, onReset, hasFilters }) {
         <select value={filters.access} onChange={(event) => onChange("access", event.target.value)}>
           {options.access.map((access) => <option key={access}>{access}</option>)}
         </select>
+      </label>
+      <label className="library-search-field">
+        <span>Search the archive</span>
+        <input
+          type="search"
+          value={filters.search}
+          onChange={(event) => onChange("search", event.target.value)}
+          placeholder="Search records"
+        />
       </label>
       {hasFilters && <button type="button" onClick={onReset}>Reset filters</button>}
     </div>
@@ -194,13 +190,16 @@ function RecordRow({ record }) {
       <div data-label="Evidence"><EvidenceBadge status={record.evidenceStatus} /></div>
       <div data-label="Access"><AccessBadge access={record.access} /></div>
       <div className="library-record-action" data-label="Action"><RecordAction record={record} /></div>
-      {record.notes && <p className="library-record-note"><span>Record note</span>{record.notes}</p>}
-      <div className="library-related-routes">
-        <span>Related chapters</span>
-        {record.relatedRoutes.map((route) => (
-          <Link key={route} to={route}>{route.replace("/", "")}</Link>
-        ))}
-      </div>
+      <details className="library-record-details">
+        <summary>Record notes and related chapters</summary>
+        {record.notes && <p className="library-record-note"><span>Record note</span>{record.notes}</p>}
+        <div className="library-related-routes">
+          <span>Related chapters</span>
+          {record.relatedRoutes.map((route) => (
+            <Link key={route} to={route}>{route.replace("/", "")}</Link>
+          ))}
+        </div>
+      </details>
     </article>
   );
 }
