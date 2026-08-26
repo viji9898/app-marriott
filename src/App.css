@@ -2086,3 +2086,813 @@ footer {
     padding-top: 38px;
   }
 }
+
+/* Development / Origination */
+.development-page {
+  color: var(--body);
+  background: var(--paper);
+}
+.development-hero {
+  min-height: 82vh;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  color: #fff;
+  background: var(--ink);
+}
+.development-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 24, 32, 0.64);
+}
+.development-hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 48%;
+}
+.development-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 145px 0 130px;
+}
+.development-hero h1 {
+  max-width: 990px;
+  margin: 0;
+  font:
+    500 clamp(62px, 7.4vw, 112px) / 0.88 "Cormorant Garamond",
+    serif;
+  letter-spacing: -0.03em;
+}
+.development-hero-copy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  max-width: 910px;
+  margin-top: 42px;
+}
+.development-hero-copy p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 13px;
+  line-height: 1.75;
+}
+.development-signals {
+  position: absolute;
+  z-index: 2;
+  inset: auto 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.development-signals .page-width {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.development-signals span {
+  padding: 20px 20px 20px 0;
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.development-signals span:not(:first-child) {
+  padding-left: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+.development-section,
+.development-assembly {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.84fr) minmax(0, 1.16fr);
+  gap: 12%;
+  padding-block: 125px;
+}
+.development-section-heading h2,
+.development-close h2 {
+  max-width: 800px;
+  margin: 0;
+  color: var(--ink);
+  font:
+    500 clamp(46px, 5.2vw, 76px) / 0.93 "Cormorant Garamond",
+    serif;
+  letter-spacing: -0.025em;
+}
+.development-section-copy {
+  max-width: 700px;
+  padding-top: 34px;
+}
+.development-section-copy > p,
+.development-search-grid > div:first-child > p,
+.development-design-intro p,
+.development-assembly-copy p,
+.development-acquisition-grid > div p,
+.development-scale-intro,
+.development-scale-note,
+.development-close-grid > div > p {
+  margin: 0 0 22px;
+  color: #555f62;
+  font-size: 14px;
+  line-height: 1.82;
+}
+.development-primary-criteria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 48px 0 40px;
+  border-block: 1px solid var(--ink);
+}
+.development-primary-criteria article {
+  padding: 22px 20px 25px 0;
+}
+.development-primary-criteria article + article {
+  padding-left: 20px;
+  border-left: 1px solid var(--line);
+}
+.development-primary-criteria article > span,
+.development-diagram-label > span {
+  color: var(--copper);
+  font-size: 9px;
+}
+.development-primary-criteria h3 {
+  margin: 27px 0 13px;
+  color: var(--ink);
+  font:
+    500 24px/1 "Cormorant Garamond",
+    serif;
+}
+.development-primary-criteria p {
+  margin: 0;
+  color: #626865;
+  font-size: 11px;
+  line-height: 1.65;
+}
+.development-emphasis {
+  color: var(--ink);
+  font:
+    500 24px/1.4 "Cormorant Garamond",
+    serif;
+}
+.development-search {
+  padding: 115px 0;
+  color: #fff;
+  background: var(--slate);
+}
+.development-search-grid {
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+  gap: 12%;
+}
+.development-search .eyebrow {
+  color: var(--sand);
+}
+.development-search .development-section-heading h2 {
+  color: #fff;
+}
+.development-search-grid > div:first-child > p {
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 0.62);
+}
+.development-search-data {
+  border-top: 1px solid rgba(255, 255, 255, 0.34);
+}
+.development-seventy {
+  display: flex;
+  align-items: flex-end;
+  gap: 25px;
+  padding: 20px 0 30px;
+}
+.development-seventy strong {
+  color: var(--sand);
+  font:
+    500 108px/0.8 "Cormorant Garamond",
+    serif;
+}
+.development-seventy span {
+  max-width: 150px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  line-height: 1.55;
+  text-transform: uppercase;
+}
+.development-search-data ul,
+.development-constraints ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  list-style: none;
+}
+.development-search-data li {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 10px;
+  padding: 13px 15px 13px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.development-search-data li:nth-child(even) {
+  padding-left: 15px;
+  border-left: 1px solid rgba(255, 255, 255, 0.16);
+}
+.development-search-data svg {
+  color: var(--copper);
+}
+.development-location-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 34px;
+  padding-bottom: 18px;
+  color: var(--copper);
+  border-bottom: 1px solid var(--ink);
+}
+.development-location-label span {
+  color: #6d706d;
+  font-size: 9px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.development-constraints {
+  margin: 48px 0;
+}
+.development-constraints h3 {
+  margin: 0;
+  padding: 15px 0;
+  color: var(--copper);
+  border-top: 1px solid var(--ink);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.development-constraints ul {
+  grid-template-columns: 1fr;
+  border-top-color: var(--line);
+}
+.development-constraints li {
+  padding: 13px 0;
+  color: #596164;
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+}
+.development-design {
+  padding: 115px 0;
+  background: var(--ivory);
+}
+.development-design .development-section-heading {
+  max-width: 820px;
+}
+.development-design-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8%;
+  margin-top: 45px;
+}
+.development-corridors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 55px;
+  border-block: 1px solid var(--ink);
+}
+.development-corridors article {
+  padding: 25px 7% 30px 0;
+}
+.development-corridors article + article {
+  padding-left: 7%;
+  border-left: 1px solid var(--line);
+}
+.development-diagram-label h3 {
+  margin: 23px 0 0;
+  color: var(--ink);
+  font:
+    500 25px/1.1 "Cormorant Garamond",
+    serif;
+}
+.corridor-diagram {
+  display: grid;
+  margin: 35px 0 23px;
+  color: #7a7a75;
+  border: 1px solid var(--line);
+  font-size: 7px;
+  letter-spacing: 0.12em;
+  text-align: center;
+}
+.corridor-double {
+  grid-template-rows: 56px 24px 56px;
+}
+.corridor-single {
+  grid-template-rows: 25px 66px 25px;
+}
+.corridor-rooms {
+  position: relative;
+  background: rgba(183, 110, 69, 0.12);
+}
+.corridor-rooms::after {
+  content: "GUEST ROOMS";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+.corridor-path {
+  display: grid;
+  place-items: center;
+  border-block: 1px solid var(--line);
+  background: var(--paper);
+}
+.corridor-sea {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: var(--slate);
+}
+.development-corridors article > p {
+  margin: 0;
+  color: #626865;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.development-assembly {
+  align-items: center;
+  padding-block: 130px;
+}
+.development-assembly-copy {
+  margin-top: 42px;
+}
+.development-parcels {
+  display: grid;
+  grid-template-columns: 0.85fr 1.3fr 0.85fr;
+  align-items: end;
+  margin: 0;
+}
+.parcel {
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  border: 1px solid var(--line);
+}
+.parcel-central {
+  min-height: 245px;
+  color: #fff;
+  border-color: var(--ink);
+  background: var(--ink);
+}
+.parcel > span {
+  margin-bottom: auto;
+  color: var(--copper);
+  font-size: 9px;
+}
+.parcel strong {
+  font:
+    500 21px/1.05 "Cormorant Garamond",
+    serif;
+}
+.parcel small {
+  margin-top: 9px;
+  color: var(--sand);
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.development-parcels figcaption {
+  grid-column: 1 / -1;
+  margin-top: 14px;
+  color: #85847e;
+  font-size: 8px;
+  letter-spacing: 0.06em;
+}
+.development-acquisition {
+  padding: 115px 0;
+  color: #fff;
+  background: var(--ink);
+}
+.development-acquisition .eyebrow {
+  color: var(--sand);
+}
+.development-acquisition .development-section-heading h2 {
+  color: #fff;
+}
+.development-acquisition-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 11%;
+  margin-top: 65px;
+}
+.development-acquisition dl {
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.38);
+}
+.development-acquisition dl > div {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 20px;
+  padding: 17px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+}
+.development-acquisition dt {
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.development-acquisition dd {
+  margin: -3px 0 0;
+  color: var(--sand);
+  font:
+    500 22px/1.15 "Cormorant Garamond",
+    serif;
+}
+.development-acquisition-grid > div {
+  padding-top: 12px;
+}
+.development-acquisition-grid > div p {
+  color: rgba(255, 255, 255, 0.6);
+}
+.development-acquisition-grid > div .development-emphasis {
+  margin-block: 32px;
+  color: #fff;
+  font-size: 25px;
+}
+.development-utilities {
+  padding-block: 125px;
+}
+.development-utility-cost {
+  display: flex;
+  flex-direction: column;
+  margin: 48px 0 35px;
+  padding: 22px 0 25px;
+  border-block: 1px solid var(--ink);
+}
+.development-utility-cost span,
+.development-utility-cost small {
+  color: #77766f;
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.development-utility-cost strong {
+  margin: 14px 0 10px;
+  color: var(--ink);
+  font:
+    500 48px/1 "Cormorant Garamond",
+    serif;
+}
+.development-utility-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 35px;
+}
+.development-utility-list > div {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 10px;
+  padding: 16px 15px 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+.development-utility-list > div:nth-child(even) {
+  padding-left: 15px;
+  border-left: 1px solid var(--line);
+}
+.development-utility-list span {
+  color: var(--copper);
+  font-size: 9px;
+}
+.development-utility-list p {
+  margin: -3px 0 0;
+  color: #596164;
+  font-size: 11px;
+  line-height: 1.55;
+}
+.development-scale {
+  padding: 115px 0;
+  background: var(--ivory);
+}
+.development-scale .development-section-heading {
+  max-width: 850px;
+}
+.development-scale-intro {
+  max-width: 650px;
+  margin-top: 38px;
+}
+.development-scale-timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 72px;
+  border-top: 1px solid var(--ink);
+}
+.development-scale-timeline article {
+  position: relative;
+  padding: 32px 25px 0 0;
+}
+.development-scale-timeline article + article {
+  padding-left: 25px;
+  border-left: 1px solid var(--line);
+}
+.development-scale-timeline article::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--copper);
+}
+.development-scale-timeline article + article::before {
+  left: -5px;
+}
+.development-scale-timeline article > div {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+}
+.development-scale-timeline strong {
+  color: var(--ink);
+  font:
+    500 49px/1 "Cormorant Garamond",
+    serif;
+}
+.development-scale-timeline span {
+  color: #77766f;
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.development-scale-timeline article > p {
+  margin: 20px 0 0;
+  color: #596164;
+  font-size: 11px;
+  line-height: 1.55;
+}
+.development-scale-note {
+  max-width: 760px;
+  margin-top: 55px;
+}
+.development-lessons {
+  padding-block: 125px;
+}
+.development-lessons-list {
+  margin-top: 70px;
+  border-top: 1px solid var(--ink);
+}
+.development-lessons-list article {
+  display: grid;
+  grid-template-columns: 60px minmax(210px, 0.7fr) 1.3fr;
+  gap: 35px;
+  padding: 25px 0;
+  border-bottom: 1px solid var(--line);
+}
+.development-lessons-list article > span {
+  color: var(--copper);
+  font-size: 9px;
+}
+.development-lessons-list h3 {
+  margin: -4px 0 0;
+  color: var(--ink);
+  font:
+    500 27px/1.05 "Cormorant Garamond",
+    serif;
+}
+.development-lessons-list p {
+  margin: 0;
+  color: #596164;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.development-close {
+  padding: 105px 0;
+  background: var(--ivory);
+}
+.development-close-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 11%;
+}
+.development-close-grid > div:last-child {
+  padding-top: 30px;
+}
+.development-next {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  margin-top: 48px;
+  padding: 23px 0;
+  color: var(--ink);
+  border-block: 1px solid var(--ink);
+  text-decoration: none;
+}
+.development-next span {
+  grid-column: 1;
+  color: var(--copper);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.development-next strong {
+  grid-column: 1;
+  margin-top: 8px;
+  font:
+    500 29px/1.05 "Cormorant Garamond",
+    serif;
+}
+.development-next svg {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  color: var(--copper);
+}
+
+@media (max-width: 960px) {
+  .development-section,
+  .development-assembly,
+  .development-search-grid,
+  .development-close-grid {
+    gap: 7%;
+  }
+  .development-primary-criteria {
+    grid-template-columns: 1fr;
+  }
+  .development-primary-criteria article,
+  .development-primary-criteria article + article {
+    display: grid;
+    grid-template-columns: 30px 160px 1fr;
+    gap: 15px;
+    padding: 18px 0;
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+  .development-primary-criteria article:first-child {
+    border-top: 0;
+  }
+  .development-primary-criteria h3,
+  .development-primary-criteria p {
+    margin: 0;
+  }
+  .development-lessons-list article {
+    grid-template-columns: 45px 190px 1fr;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 720px) {
+  .development-hero {
+    min-height: 790px;
+  }
+  .development-hero::after {
+    background: rgba(16, 24, 32, 0.58);
+  }
+  .development-hero-image {
+    object-position: 66% center;
+  }
+  .development-hero-content {
+    padding: 130px 0 170px;
+  }
+  .development-hero h1 {
+    font-size: clamp(58px, 16vw, 78px);
+  }
+  .development-hero-copy {
+    display: block;
+    margin-top: 35px;
+  }
+  .development-hero-copy p + p {
+    margin-top: 17px;
+  }
+  .development-signals .page-width {
+    grid-template-columns: 1fr 1fr;
+  }
+  .development-signals span,
+  .development-signals span:not(:first-child) {
+    padding: 13px 10px 13px 0;
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    font-size: 7px;
+  }
+  .development-signals span:nth-child(even) {
+    padding-left: 12px;
+    border-left: 1px solid rgba(255, 255, 255, 0.14);
+  }
+  .development-section,
+  .development-assembly,
+  .development-search-grid,
+  .development-close-grid {
+    display: block;
+  }
+  .development-section,
+  .development-assembly,
+  .development-lessons {
+    padding-block: 82px;
+  }
+  .development-section-copy {
+    padding-top: 42px;
+  }
+  .development-primary-criteria article,
+  .development-primary-criteria article + article {
+    grid-template-columns: 28px 1fr;
+  }
+  .development-primary-criteria p {
+    grid-column: 2;
+  }
+  .development-search,
+  .development-design,
+  .development-acquisition,
+  .development-scale,
+  .development-close {
+    padding-block: 78px;
+  }
+  .development-search-data {
+    margin-top: 55px;
+  }
+  .development-seventy strong {
+    font-size: 90px;
+  }
+  .development-search-data ul {
+    grid-template-columns: 1fr;
+  }
+  .development-search-data li,
+  .development-search-data li:nth-child(even) {
+    padding: 13px 0;
+    border-left: 0;
+  }
+  .development-design-intro,
+  .development-corridors {
+    display: block;
+  }
+  .development-design-intro {
+    margin-top: 38px;
+  }
+  .development-corridors article,
+  .development-corridors article + article {
+    padding: 25px 0 30px;
+    border-left: 0;
+  }
+  .development-corridors article + article {
+    border-top: 1px solid var(--line);
+  }
+  .development-parcels {
+    margin-top: 55px;
+  }
+  .parcel {
+    min-height: 150px;
+    padding: 12px;
+  }
+  .parcel-central {
+    min-height: 210px;
+  }
+  .parcel strong {
+    font-size: 16px;
+  }
+  .development-acquisition-grid {
+    display: block;
+    margin-top: 50px;
+  }
+  .development-acquisition-grid > div {
+    padding-top: 50px;
+  }
+  .development-acquisition dl > div {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+  .development-utility-list {
+    grid-template-columns: 1fr;
+  }
+  .development-utility-list > div,
+  .development-utility-list > div:nth-child(even) {
+    padding: 16px 0;
+    border-left: 0;
+  }
+  .development-scale-timeline {
+    display: block;
+    margin-top: 55px;
+    border-top: 0;
+    border-left: 1px solid var(--ink);
+  }
+  .development-scale-timeline article,
+  .development-scale-timeline article + article {
+    padding: 0 0 40px 30px;
+    border-left: 0;
+  }
+  .development-scale-timeline article::before,
+  .development-scale-timeline article + article::before {
+    top: 0;
+    left: -5px;
+  }
+  .development-lessons-list {
+    margin-top: 50px;
+  }
+  .development-lessons-list article {
+    grid-template-columns: 35px 1fr;
+    gap: 12px 18px;
+  }
+  .development-lessons-list p {
+    grid-column: 2;
+  }
+  .development-close-grid > div:last-child {
+    padding-top: 38px;
+  }
+}
