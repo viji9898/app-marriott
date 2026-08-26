@@ -39,6 +39,8 @@ import OpportunityPage from "./pages/OpportunityPage";
 import DevelopmentPage from "./pages/DevelopmentPage";
 import DesignPage from "./pages/DesignPage";
 import ConstructionPage from "./pages/ConstructionPage";
+import OperationsPage from "./pages/OperationsPage";
+import ExitPage from "./pages/ExitPage";
 import "./App.css";
 
 const stages = [
@@ -486,6 +488,8 @@ function App() {
         <Route path="/development" element={<DevelopmentPage />} />
         <Route path="/design" element={<DesignPage />} />
         <Route path="/construction" element={<ConstructionPage />} />
+        <Route path="/operations" element={<OperationsPage />} />
+        <Route path="/exit" element={<ExitPage />} />
         {Object.entries(pageData).map(([path, [section, title, intro]]) => (
           <Route
             key={path}
