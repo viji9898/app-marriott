@@ -72,6 +72,7 @@
   display: block;
 }
 .mobile-nav {
+  color: #fff;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   background: var(--ink);
   padding: 14px 48px 22px;
