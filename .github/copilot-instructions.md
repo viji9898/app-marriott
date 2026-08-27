@@ -4,7 +4,7 @@ Before creating, editing or reviewing any Project Study page, read `docs/project
 
 This applies to:
 
-- `src/pages/ProjectStudyPage.*`
+- `src/ProjectStudyPages/**`
 - `src/components/studies/**`
 - `src/data/projectStudies.*`
 - Routes under `/development/`, `/design/`, `/construction/`, `/operations/` and `/exit/` that render a Project Study

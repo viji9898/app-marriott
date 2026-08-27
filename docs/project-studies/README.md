@@ -126,6 +126,8 @@ Prefer reusable components such as `StudyHero`, `StudyMetadata`, `DecisionSummar
 
 A study-specific visual may be introduced when necessary, but the surrounding structure should remain consistent.
 
+Detailed pages live under `src/ProjectStudyPages/`. Each published study should have a kebab-case `{stage}-{study-slug}` folder containing its plain serializable data record, standalone page component and study-specific visual components. `src/data/projectStudies.js` remains the central registry of uniform records, while `src/ProjectStudyPages/index.js` separately maps study IDs to React components. Do not place React components or functions in study data records.
+
 ## Design standard
 
 Project Study pages should feel editorial, architectural, evidence-led, calm, institutional and precise. Use existing typography, colour tokens and spacing; warm neutral surfaces; fine dividers; clear grids; restrained accents and generous whitespace.

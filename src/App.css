@@ -8907,6 +8907,15 @@ body:has(.project-study-page) .site-header:not(.is-scrolled) {
 }
 .detail-study-content {
   min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 36px;
+}
+.detail-study-content > * {
+  grid-column: 1 / -1;
+}
+.detail-study-content > .detail-study-section.is-half {
+  grid-column: auto;
 }
 .study-decision-summary {
   padding: 36px 40px;
@@ -9349,6 +9358,9 @@ body:has(.project-study-page) .site-header:not(.is-scrolled) {
     width: calc(100% - 36px);
     margin-inline: auto;
     padding-top: 42px;
+  }
+  .detail-study-content > .detail-study-section.is-half {
+    grid-column: 1 / -1;
   }
   .detail-study-decision-wrap {
     width: calc(100% - 36px);

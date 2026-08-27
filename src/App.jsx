@@ -48,7 +48,8 @@ import LessonsPage from "./pages/LessonsPage";
 import LibraryPage from "./pages/LibraryPage";
 import ProjectPartnersPage from "./pages/ProjectPartnersPage";
 import ProjectStudiesPage from "./pages/ProjectStudiesPage";
-import ProjectStudyPage from "./pages/ProjectStudyPage";
+import ProjectStudyPage from "./ProjectStudyPages/ProjectStudyPage";
+import { PROJECT_STUDY_PAGE_COMPONENTS } from "./ProjectStudyPages";
 import "./App.css";
 
 const siteUrl = "https://marriott.viji.com";
@@ -714,13 +715,17 @@ function App() {
         <Route path="/lessons" element={<LessonsPage />} />
         <Route path="/library" element={<LibraryPage />} />
         <Route path="/project-studies" element={<ProjectStudiesPage />} />
-        {PROJECT_STUDIES.map((study) => (
-          <Route
-            key={study.id}
-            path={study.route}
-            element={<ProjectStudyPage study={study} />}
-          />
-        ))}
+        {PROJECT_STUDIES.map((study) => {
+          const StudyPage =
+            PROJECT_STUDY_PAGE_COMPONENTS[study.id] || ProjectStudyPage;
+          return (
+            <Route
+              key={study.id}
+              path={study.route}
+              element={<StudyPage study={study} />}
+            />
+          );
+        })}
         <Route
           caseSensitive
           path="/project-partners"
