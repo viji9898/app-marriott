@@ -8771,6 +8771,410 @@ body:has(.project-study-page) .site-header:not(.is-scrolled) {
   text-decoration: none;
   text-transform: uppercase;
 }
+.detail-study-page {
+  --study-accent: #356f67;
+}
+.detail-study-hero {
+  padding: 56px 0 0;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+.detail-study-breadcrumb {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: rgba(24, 33, 42, 0.58);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.detail-study-breadcrumb a {
+  text-decoration: none;
+}
+.detail-study-breadcrumb a:hover {
+  color: var(--study-accent);
+}
+.detail-study-hero-grid {
+  min-height: 350px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 7%;
+}
+.detail-study-hero-grid h1 {
+  max-width: 650px;
+  margin: 0;
+  font: 500 clamp(52px, 5vw, 72px)/0.96 "Cormorant Garamond", serif;
+  letter-spacing: 0;
+}
+.detail-study-hero-grid .eyebrow {
+  color: var(--study-accent);
+}
+.detail-study-standfirst {
+  max-width: 640px;
+  margin: 28px 0 0;
+  color: rgba(24, 33, 42, 0.72);
+  font-size: 14px;
+  line-height: 1.75;
+}
+.detail-study-hero figure {
+  height: 300px;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+.detail-study-hero figure img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.detail-study-hero figcaption {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 11px 14px;
+  color: rgba(255, 255, 255, 0.78);
+  background: rgba(16, 24, 32, 0.82);
+  font-size: 8px;
+}
+.detail-study-metadata {
+  min-height: 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  border-top: 1px solid var(--line);
+}
+.detail-study-metadata > div {
+  padding-left: 26px;
+  border-left: 1px solid var(--line);
+}
+.detail-study-metadata > div:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+.detail-study-metadata dt {
+  margin-bottom: 7px;
+  color: rgba(24, 33, 42, 0.52);
+  font-size: 9px;
+}
+.detail-study-metadata dd {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+.detail-study-decision-wrap {
+  padding-top: 48px;
+}
+.detail-study-layout {
+  padding-block: 48px 78px;
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 54px;
+}
+.study-contents {
+  position: sticky;
+  top: 86px;
+  align-self: start;
+}
+.study-contents > p {
+  margin: 0 0 18px;
+  color: rgba(24, 33, 42, 0.52);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.study-contents > div {
+  display: grid;
+  border-left: 1px solid var(--line);
+}
+.study-contents a {
+  min-height: 38px;
+  margin-left: -1px;
+  padding: 12px 0 10px 17px;
+  color: rgba(24, 33, 42, 0.68);
+  border-left: 2px solid transparent;
+  font-size: 10px;
+  line-height: 1.3;
+  text-decoration: none;
+}
+.study-contents a:hover,
+.study-contents a[aria-current="location"] {
+  color: var(--study-accent);
+  border-left-color: var(--study-accent);
+}
+.detail-study-content {
+  min-width: 0;
+}
+.study-decision-summary {
+  padding: 36px 40px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 8%;
+  background: var(--ivory);
+  border: 1px solid var(--line);
+}
+.study-decision-summary h2,
+.detail-study-section h2,
+.related-studies h2 {
+  margin: 0;
+  font: 500 clamp(34px, 4vw, 50px)/1 "Cormorant Garamond", serif;
+  letter-spacing: 0;
+}
+.study-decision-summary > div > p:last-child,
+.detail-study-section > p:not(.eyebrow),
+.land-assembly > p {
+  margin: 22px 0 0;
+  color: rgba(24, 33, 42, 0.72);
+  font-size: 12px;
+  line-height: 1.8;
+}
+.study-decision-summary dl {
+  margin: 0;
+  display: grid;
+  border-left: 1px solid var(--line);
+}
+.study-decision-summary dl > div {
+  padding: 12px 0 18px 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid var(--line);
+}
+.study-decision-summary dl > div:last-child {
+  border-bottom: 0;
+}
+.study-decision-summary dt {
+  color: var(--study-accent);
+  font: 500 42px/1 "Cormorant Garamond", serif;
+}
+.study-decision-summary dd {
+  margin: 7px 0 0;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.detail-study-section {
+  padding: 54px 0;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 100px;
+  outline: none;
+}
+.detail-study-section:focus-visible {
+  outline: 2px solid var(--study-accent);
+  outline-offset: 8px;
+}
+.criteria-matrix-wrap {
+  margin-top: 30px;
+  overflow-x: auto;
+}
+.criteria-matrix {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+  text-align: left;
+}
+.criteria-matrix th,
+.criteria-matrix td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+  font-size: 10px;
+  line-height: 1.45;
+  vertical-align: top;
+}
+.criteria-matrix thead th {
+  color: rgba(24, 33, 42, 0.52);
+  font-size: 8px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.criteria-matrix tbody th {
+  font-weight: 600;
+}
+.criteria-matrix tbody td:last-child {
+  color: var(--study-accent);
+  font-weight: 600;
+}
+.study-reasons-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 36px;
+}
+.study-reasons-grid ul,
+.study-constraints-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+.study-reasons-grid li,
+.study-constraints-list li {
+  min-height: 46px;
+  padding: 14px 10px 12px 25px;
+  position: relative;
+  border-bottom: 1px solid var(--line);
+  font-size: 11px;
+  line-height: 1.45;
+}
+.study-reasons-grid li::before,
+.study-constraints-list li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 19px;
+  left: 2px;
+  background: var(--study-accent);
+}
+.study-reasons-grid img {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+}
+.study-constraints-list {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.study-constraints-list li:nth-child(odd) {
+  padding-right: 24px;
+}
+.land-assembly ol {
+  margin: 32px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+.land-assembly li {
+  min-height: 142px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.land-assembly li:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  z-index: 1;
+  top: 65px;
+  right: -8px;
+  color: var(--study-accent);
+  background: var(--paper);
+}
+.land-assembly li span {
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: var(--study-accent);
+  border-radius: 50%;
+  font-size: 9px;
+}
+.land-assembly li strong {
+  font: 500 17px/1.1 "Cormorant Garamond", serif;
+}
+.detail-study-section.is-retrospective {
+  margin: 64px 0 0;
+  padding: 42px;
+  background: var(--ink);
+  color: #fff;
+  border: 0;
+}
+.detail-study-section.is-retrospective .eyebrow {
+  color: var(--sand);
+}
+.detail-study-section blockquote {
+  margin: 28px 0 0;
+  color: rgba(255, 255, 255, 0.76);
+  font: 400 21px/1.5 "Cormorant Garamond", serif;
+}
+.study-record-empty {
+  margin-top: 26px;
+  padding: 24px;
+  color: rgba(24, 33, 42, 0.58);
+  border: 1px solid var(--line);
+  font-size: 11px;
+}
+.study-sequence-navigation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid var(--line);
+}
+.study-sequence-navigation a {
+  min-height: 106px;
+  padding: 28px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  text-decoration: none;
+}
+.study-sequence-navigation a:last-child {
+  align-items: flex-end;
+  text-align: right;
+}
+.study-sequence-navigation span,
+.related-studies a > span:first-child,
+.related-studies a > p {
+  color: var(--study-accent);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.study-sequence-navigation strong {
+  font: 500 19px/1.1 "Cormorant Garamond", serif;
+}
+.related-studies {
+  padding-top: 62px;
+}
+.related-studies > div {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+.related-studies a {
+  min-height: 190px;
+  padding: 24px;
+  position: relative;
+  color: inherit;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  transition: background-color 180ms ease;
+}
+.related-studies a:hover {
+  background: var(--ivory);
+}
+.related-studies a:active {
+  background: #e7e1d6;
+}
+.related-studies h3 {
+  max-width: 330px;
+  margin: 30px 0 12px;
+  font: 500 27px/1 "Cormorant Garamond", serif;
+}
+.related-studies a > p {
+  margin: 0;
+  color: rgba(24, 33, 42, 0.48);
+}
+.related-studies a > span:last-child {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  color: var(--study-accent);
+}
 @media (max-width: 1100px) {
   .desktop-nav {
     display: none;
@@ -8783,6 +9187,10 @@ body:has(.project-study-page) .site-header:not(.is-scrolled) {
   }
   .study-card {
     min-height: 320px;
+  }
+  .detail-study-layout {
+    grid-template-columns: 160px minmax(0, 1fr);
+    gap: 34px;
   }
 }
 @media (max-width: 720px) {
@@ -8857,5 +9265,140 @@ body:has(.project-study-page) .site-header:not(.is-scrolled) {
   }
   .project-study-body ol {
     grid-template-columns: 1fr;
+  }
+  .detail-study-hero {
+    padding-top: 70px;
+  }
+  .detail-study-breadcrumb {
+    min-height: 58px;
+    padding-block: 16px;
+    flex-wrap: wrap;
+    line-height: 1.5;
+  }
+  .detail-study-hero-grid {
+    min-height: 0;
+    padding-block: 38px;
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+  .detail-study-hero-grid h1 {
+    font-size: 44px;
+  }
+  .detail-study-hero figure {
+    height: 180px;
+  }
+  .detail-study-metadata {
+    min-height: 80px;
+    padding-block: 14px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  .detail-study-metadata > div,
+  .detail-study-metadata > div:first-child {
+    min-width: 0;
+    padding: 0 10px;
+    border-bottom: 0;
+    border-left: 1px solid var(--line);
+  }
+  .detail-study-metadata > div:first-child {
+    padding-left: 0;
+    border-left: 0;
+  }
+  .detail-study-metadata dt {
+    font-size: 7px;
+    line-height: 1.35;
+  }
+  .detail-study-metadata dd {
+    font-size: 9px;
+    line-height: 1.35;
+  }
+  .detail-study-layout {
+    width: 100%;
+    padding-block: 0 58px;
+    display: block;
+  }
+  .study-contents {
+    position: sticky;
+    z-index: 4;
+    top: 70px;
+    padding: 0 18px;
+    overflow-x: auto;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+  }
+  .study-contents > p {
+    display: none;
+  }
+  .study-contents > div {
+    width: max-content;
+    display: flex;
+    border-left: 0;
+  }
+  .study-contents a {
+    min-height: 50px;
+    margin: 0;
+    padding: 18px 14px 14px;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+  }
+  .study-contents a[aria-current="location"] {
+    border-left-color: transparent;
+    border-bottom-color: var(--study-accent);
+  }
+  .detail-study-content {
+    width: calc(100% - 36px);
+    margin-inline: auto;
+    padding-top: 42px;
+  }
+  .detail-study-decision-wrap {
+    width: calc(100% - 36px);
+    padding-top: 36px;
+  }
+  .study-decision-summary,
+  .study-reasons-grid {
+    grid-template-columns: 1fr;
+  }
+  .study-decision-summary {
+    padding: 28px 24px;
+    gap: 32px;
+  }
+  .study-decision-summary dl {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+  .study-decision-summary dl > div {
+    padding: 18px 0;
+  }
+  .detail-study-section {
+    padding: 52px 0;
+    scroll-margin-top: 130px;
+  }
+  .study-reasons-grid img {
+    min-height: 220px;
+  }
+  .study-constraints-list,
+  .land-assembly ol,
+  .related-studies > div,
+  .study-sequence-navigation {
+    grid-template-columns: 1fr;
+  }
+  .land-assembly li {
+    min-height: 106px;
+    gap: 18px;
+  }
+  .land-assembly li:not(:last-child)::after {
+    top: auto;
+    right: 20px;
+    bottom: -10px;
+    transform: rotate(90deg);
+  }
+  .detail-study-section.is-retrospective {
+    margin-top: 52px;
+    padding: 30px 24px;
+  }
+  .study-sequence-navigation a:last-child {
+    align-items: flex-start;
+    text-align: left;
+    border-top: 1px solid var(--line);
   }
 }
