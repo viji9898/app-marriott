@@ -248,6 +248,9 @@ function RouteSeo() {
 function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [showDisclaimer, setShowDisclaimer] = useState(
+    () => sessionStorage.getItem("disclaimer-dismissed") !== "true",
+  );
   const { pathname } = useLocation();
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -256,14 +259,28 @@ function Header() {
   }, []);
   return (
     <header className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
-      <div className="site-disclaimer">
-        <p>
-          This is an independent development record prepared by Vijitha
-          Wijesuriya. It is not affiliated with, operated by, sponsored by or
-          endorsed by Marriott International, Inc. Marriott and related marks
-          belong to their respective owners.
-        </p>
-      </div>
+      {showDisclaimer && (
+        <div className="site-disclaimer">
+          <p>
+            This is an independent development record prepared by Vijitha
+            Wijesuriya. It is not affiliated with, operated by, sponsored by or
+            endorsed by Marriott International, Inc. Marriott and related marks
+            belong to their respective owners.
+          </p>
+          <button
+            className="disclaimer-close"
+            type="button"
+            aria-label="Dismiss disclaimer"
+            title="Dismiss disclaimer"
+            onClick={() => {
+              sessionStorage.setItem("disclaimer-dismissed", "true");
+              setShowDisclaimer(false);
+            }}
+          >
+            <X size={18} aria-hidden="true" />
+          </button>
+        </div>
+      )}
       <div className="header-inner">
         <Link className="wordmark" to="/" onClick={() => setOpen(false)}>
           WELIGAMA <span>/</span> DEVELOPMENT RECORD

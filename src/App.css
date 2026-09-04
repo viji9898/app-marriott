@@ -29,12 +29,31 @@
   background: var(--ivory);
   border-bottom: 1px solid rgba(16, 24, 32, 0.12);
   text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 .site-disclaimer p {
+  flex: 1;
   max-width: var(--max);
   margin: 0 auto;
-  font-size: 9px;
+  font-size: 18px;
   line-height: 1.45;
+}
+.disclaimer-close {
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid rgba(16, 24, 32, 0.28);
+  cursor: pointer;
+}
+.disclaimer-close:hover {
+  background: rgba(16, 24, 32, 0.08);
 }
 .header-inner {
   width: min(var(--max), calc(100% - 96px));
@@ -709,7 +728,7 @@ footer {
     text-align: left;
   }
   .site-disclaimer p {
-    font-size: 8px;
+    font-size: 16px;
     line-height: 1.4;
   }
   .header-inner {
