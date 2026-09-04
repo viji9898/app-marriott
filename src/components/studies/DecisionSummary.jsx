@@ -1,6 +1,9 @@
 function DecisionSummary({ text, callouts }) {
   return (
-    <section className="study-decision-summary" aria-labelledby="decision-summary-title">
+    <section
+      className="study-decision-summary"
+      aria-labelledby="decision-summary-title"
+    >
       <div>
         <p className="eyebrow eyebrow-dark">THE DECISION</p>
         <h2 id="decision-summary-title">Decision summary</h2>

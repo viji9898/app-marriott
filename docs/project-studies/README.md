@@ -64,13 +64,7 @@ Each evidence item should contain:
 
 ```js
 {
-  id,
-  title,
-  type,
-  date,
-  evidenceStatus,
-  access,
-  href
+  (id, title, type, date, evidenceStatus, access, href);
 }
 ```
 

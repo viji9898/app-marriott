@@ -1,3 +1,5 @@
+import { PROPERTY_SEARCH_IMAGES } from "./imageData.js";
+
 export const DEVELOPMENT_LAND_SELECTION_STUDY = {
   id: "development-land-selection",
   number: "01",
@@ -13,6 +15,9 @@ export const DEVELOPMENT_LAND_SELECTION_STUDY = {
   image:
     "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-marriott-case-study/project_study_pages/land-selection/weligama_bay_hero.webp",
   imageAlt: "Weligama Bay viewed from the beachfront development site",
+  imageCollections: {
+    propertySearch: PROPERTY_SEARCH_IMAGES,
+  },
   metadata: [
     ["Acquisition completed", "7 March 2011"],
     ["Stage", "Origination"],

@@ -240,6 +240,9 @@ export const STUDY_FRAMEWORK = [
 
 export const EVIDENCE_CLASSIFICATIONS = [
   ["Documented", "supported by a contemporaneous project record"],
-  ["Corroborated", "supported by multiple records or verified project information"],
+  [
+    "Corroborated",
+    "supported by multiple records or verified project information",
+  ],
   ["Retrospective", "based on a later account of the project"],
 ];

@@ -150,7 +150,8 @@ function RouteSeo() {
     const study = PROJECT_STUDIES.find(
       (projectStudy) => projectStudy.route === normalizedPath,
     );
-    const page = routeSeo[normalizedPath] ||
+    const page =
+      routeSeo[normalizedPath] ||
       (study && {
         title: `${study.title} | Weligama Bay Marriott Project Study`,
         description: study.summary || `Project study: ${study.title}.`,
@@ -255,6 +256,14 @@ function Header() {
   }, []);
   return (
     <header className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
+      <div className="site-disclaimer">
+        <p>
+          This is an independent development record prepared by Vijitha
+          Wijesuriya. It is not affiliated with, operated by, sponsored by or
+          endorsed by Marriott International, Inc. Marriott and related marks
+          belong to their respective owners.
+        </p>
+      </div>
       <div className="header-inner">
         <Link className="wordmark" to="/" onClick={() => setOpen(false)}>
           WELIGAMA <span>/</span> DEVELOPMENT RECORD

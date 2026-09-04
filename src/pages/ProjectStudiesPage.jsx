@@ -53,7 +53,9 @@ function ProjectStudiesPage() {
             ))}
           </div>
         ) : (
-          <p className="studies-empty">No featured studies in this stage yet.</p>
+          <p className="studies-empty">
+            No featured studies in this stage yet.
+          </p>
         )}
       </section>
 

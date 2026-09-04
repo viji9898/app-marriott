@@ -15,8 +15,8 @@ function ProjectPartnersPage() {
           <h1>The institutions and specialists behind the development</h1>
           <p className="partners-hero-intro">
             The resort brought together financial institutions, hotel advisors,
-            international designers, specialist consultants and local contractors
-            across the development lifecycle.
+            international designers, specialist consultants and local
+            contractors across the development lifecycle.
           </p>
         </div>
       </section>
